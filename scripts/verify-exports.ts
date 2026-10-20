@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { readFile, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, stat, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import ffmpeg from "ffmpeg-static";
 import ffprobe from "ffprobe-static";
@@ -78,6 +78,7 @@ for (const file of [
     sha256: createHash("sha256").update(buf).digest("hex"),
   });
 }
+await mkdir("artifacts", { recursive: true });
 await writeFile(
   "artifacts/export-report.json",
   JSON.stringify(

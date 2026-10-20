@@ -1,5 +1,5 @@
 import { getDocument, OPS } from "pdfjs-dist/legacy/build/pdf.mjs";
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 const report = [];
 for (const [name, w, h] of [
   ["a3", 841.89, 1190.55],
@@ -44,5 +44,6 @@ for (const [name, w, h] of [
   });
   await task.destroy();
 }
+await mkdir("artifacts", { recursive: true });
 await writeFile("artifacts/pdf-report.json", JSON.stringify(report, null, 2));
 console.log(report);
