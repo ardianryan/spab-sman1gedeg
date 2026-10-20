@@ -1,0 +1,25 @@
+1
+00:00:00,000 --> 00:00:10,000
+DRAF · 0.2.0-draft
+Kenali bukaan setiap pintu.
+G–H lantai 1 membuka keluar; pintu bawah G berayun dua arah. H paling kanan lantai 1 berdaun tunggal. G lantai 2 membuka ke dalam.
+
+2
+00:00:10,000 --> 00:00:20,000
+Menuju lapangan utama KU.
+Pos A1 terbuka tanpa pintu. Gerbang kiri menjadi akses normal menuju penyeberangan jalan dan KU. Gerbang kanan perlu dibuka petugas.
+
+3
+00:00:20,000 --> 00:00:30,000
+K1 dan K2 bersifat sementara.
+Saat akses keluar padat atau terhalang, K1 dan K2 menjadi pilihan sementara. Alokasi gedung dan kapasitas belum ditetapkan.
+
+4
+00:00:30,000 --> 00:00:40,000
+Angin kencang: perlindungan dalam ruang.
+KU, K1, dan K2 tidak menjadi tujuan aktif. Ruang perlindungan yang sesuai belum ditentukan oleh sekolah.
+
+5
+00:00:40,000 --> 00:00:50,000
+Verifikasi sebelum digunakan.
+Cocokkan posisi pintu, hubungan ruang, akses, penyeberangan, dan SOP bersama tim sekolah. Draf ini belum menjadi panduan operasional.

@@ -1,0 +1,176 @@
+{
+  "version": "0.2.0-draft",
+  "status": "pre-registration",
+  "date": "2026-10-20",
+  "method": "affine-least-squares",
+  "coordinateReference": "WGS84 latitude/longitude supplied by user",
+  "anchor": {
+    "latitude": -7.454896,
+    "longitude": 112.39851,
+    "feature": "Tengah lapangan upacara",
+    "campusPosition": [
+      614,
+      625
+    ],
+    "precision": "pixel position approximate; geographic coordinate supplied by user"
+  },
+  "mapsUrl": "https://maps.app.goo.gl/NccieSzoH9xsq2sDA",
+  "resolvedUrl": "https://www.google.com/maps/search/-7.454896,+112.398510",
+  "satellite": {
+    "path": "./reference/google-maps-satelit.png",
+    "width": 669,
+    "height": 812,
+    "attribution": "Google Maps — tangkapan layar yang disediakan pengguna; tanggal citra tidak diketahui"
+  },
+  "aerial": {
+    "path": "./reference/udara-referensi.png",
+    "width": 768,
+    "height": 1376,
+    "note": "Gambar udara referensi sebelumnya; asal/ketelitian belum terverifikasi"
+  },
+  "controlPoints": [
+    {
+      "id": "CP1",
+      "feature": "Ujung kiri atas G–H",
+      "campus": [
+        564,
+        401
+      ],
+      "aerial": [
+        250,
+        440
+      ],
+      "satellite": [
+        252,
+        225
+      ]
+    },
+    {
+      "id": "CP2",
+      "feature": "Ujung kanan atas H",
+      "campus": [
+        803,
+        405
+      ],
+      "aerial": [
+        620,
+        405
+      ],
+      "satellite": [
+        466,
+        248
+      ]
+    },
+    {
+      "id": "CP3",
+      "feature": "Ujung bawah kiri N",
+      "campus": [
+        357,
+        1004
+      ],
+      "aerial": [
+        54,
+        1201
+      ],
+      "satellite": [
+        103,
+        612
+      ]
+    },
+    {
+      "id": "CP4",
+      "feature": "Ujung bawah kanan M",
+      "campus": [
+        637,
+        1001
+      ],
+      "aerial": [
+        470,
+        1214
+      ],
+      "satellite": [
+        325,
+        647
+      ]
+    },
+    {
+      "id": "CP5",
+      "feature": "Tengah lapangan upacara (acuan geografis)",
+      "campus": [
+        614,
+        625
+      ],
+      "aerial": [
+        349,
+        720
+      ],
+      "satellite": [
+        293,
+        381
+      ]
+    },
+    {
+      "id": "CP6",
+      "feature": "Ujung kanan bawah B",
+      "campus": [
+        605,
+        788
+      ],
+      "aerial": [
+        342,
+        937
+      ],
+      "satellite": [
+        282,
+        496
+      ]
+    }
+  ],
+  "limitations": [
+    "Titik pencocokan dipilih manual pada sudut atap dan area lapangan, belum hasil survei.",
+    "Selisih diukur dalam piksel tangkapan layar; bukan galat meter dan bukan akurasi geografis.",
+    "Satu koordinat acuan tidak menentukan rotasi, skala meter, atau koordinat pintu.",
+    "Transformasi hanya untuk prapemetaan visual; tidak mengganti denah operasional.",
+    "Batas gelap yang digambar pengguna bukan batas kadastral terverifikasi."
+  ],
+  "fits": {
+    "campus": {
+      "matrix": [
+        0.8284377546661643,
+        0.11348912576997147,
+        0.014436744051534112,
+        0.6915495682739237,
+        -217.6313280964247,
+        -119.73274110759185
+      ],
+      "residuals": [
+        4.815551266122007,
+        13.0216127959633,
+        10.83700368916617,
+        2.2477373953434046,
+        7.148494484465415,
+        13.123796514459894
+      ],
+      "rmse": 9.474350589085713
+    },
+    "aerial": {
+      "matrix": [
+        0.5524815174694867,
+        0.08715122824259605,
+        -0.062024827169282676,
+        0.5199573556461451,
+        145.67535187791387,
+        -21.556771432984707
+      ],
+      "residuals": [
+        6.032546413226573,
+        5.731679903291806,
+        4.809419615137099,
+        6.215501453643657,
+        2.379096676218286,
+        5.520798051447761
+      ],
+      "rmse": 5.278037170134148
+    }
+  }
+}

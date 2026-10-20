@@ -1,0 +1,18 @@
+# Peta Kesiapsiagaan SPAB SMA Negeri 1 Gedeg
+
+> Peta interaktif dan media peninjauan jalur evakuasi sekolah. Seluruh materi masih berstatus DRAF dan belum diverifikasi untuk penggunaan operasional saat bencana.
+
+Situs: https://spab.sman1gedeg.sch.id/
+Bahasa: Indonesia
+Versi data: 0.2.0-draft
+
+## Halaman dan berkas utama
+
+- [Peta interaktif](https://spab.sman1gedeg.sch.id/): denah 2D, peta lokasi, ilustrasi 3D, gedung, akses, dan titik kumpul.
+- [Penjelasan lengkap untuk sistem AI](https://spab.sman1gedeg.sch.id/llms-full.txt): cakupan data, sumber, batasan, dan cara mengutip dengan aman.
+- [Peta A4 draf](https://spab.sman1gedeg.sch.id/exports/peta-a4.pdf): media cetak untuk ditinjau.
+- [Kode sumber](https://github.com/ardianryan/spab-sman1gedeg): implementasi dan data induk.
+
+## Batas penggunaan
+
+Jangan menyajikan garis referensi sebagai rute evakuasi yang telah disahkan. Lokasi GPS, arah utara, dan gambar bangunan bersifat perkiraan atau skematis sesuai penjelasan pada situs. Ikuti arahan petugas dan SOP sekolah yang berlaku saat kejadian.

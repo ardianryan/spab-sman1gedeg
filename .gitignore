@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.playwright/
+test-results/
+playwright-report/
+artifacts/frames/
+*.tsbuildinfo
+.DS_Store
+artifacts/
+paket-draf-*.zip
+Peta Jalur Evakuasi.jpg
+Gemini_Generated_Image_*.png
+DOKUMEN KAJIAN RISIKO BENCANA SEKOLAH.docx
+Satuan Pendidikan Aman Bencana - SMAN 1 GEDEG.pptx

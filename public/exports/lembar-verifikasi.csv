@@ -1,0 +1,86 @@
+﻿jenis,id,kode_atau_nama,pertanyaan,status,peran_peninjau,tanggal,bukti,versi,status_paket
+pintu,G1-D01,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G1-D02,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G1-D03,"2 daun kaca · ayun dua arah","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G1-D04,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G2-D01,"2 daun kaca · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G2-D02,"2 daun kaca · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,G2-D03,"2 daun kaca · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H2-D01,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H2-D02,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H2-D03,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H1-D01,"1 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; Pintu paling kanan lantai 1; tanda cyan dan keterangan pengguna memastikan satu daun.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H1-D02,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; Tanda cyan sisi bawah H, paling kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H1-D03,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; Tanda cyan sisi bawah H, kedua dari kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,H1-D04,"2 daun kaca · membuka ke luar","Posisi; ruang; sambungan koridor; Tanda cyan sisi bawah H, ketiga dari kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,A1-D01,"1 daun · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,A1-D02,"1 daun · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,A1-D03,"1 daun · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,A1-D04,"1 daun · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,A1-D05,"1 daun · membuka ke dalam","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,D1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,D1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,D1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,E1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,E1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,E1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,F1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,F1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; UKS — ruang pada sambungan F–I.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,F1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,F1-D04,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,I1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,I1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,I1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,J1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,J1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,B1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,B1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,C1-D01,"2 daun · geser kanan–kiri","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,C1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,C1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,N1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,N1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,N1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,N1-D04,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,O1-D01,"2 daun · geser kanan–kiri","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,O1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Bangunan terpisah O.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,M1-D01,"1 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,M1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,M1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,M1-D04,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; ",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,B1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Pintu ruang tengah B di ujung kiri; melengkapi dua bukaan yang sudah tercatat.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,L1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang L-01: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,L1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang L-02: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,L1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang L-03: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,K1-D01,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang K-01: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,K1-D02,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang K-02: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+pintu,K1-D03,"2 daun · membuka ke luar","Posisi; ruang; sambungan koridor; Ruang K-03: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",konfirmasi_pengguna,,,,0.2.0-draft,DRAF
+gedung,A,A,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,B,B,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,C,C,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,D,D,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,E,E,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,F,F,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,G,G,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,H,H,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,I,I,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,J,J,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,K,K,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,L,L,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,M,M,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,N,N,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,O,O,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+gedung,A1,A1,"Nama; letak pintu; koridor; lantai; ramp dan tangga",belum,,,,0.2.0-draft,DRAF
+tujuan,K1,"Titik kumpul sementara · upacara","Skenario berlaku; kapasitas; bahaya sekitar",belum,,,,0.2.0-draft,DRAF
+tujuan,K2,"Titik kumpul sementara · basket","Skenario berlaku; kapasitas; bahaya sekitar",belum,,,,0.2.0-draft,DRAF
+tujuan,KU,"Lapangan utama di luar sekolah","Skenario berlaku; kapasitas; bahaya sekitar",belum,,,,0.2.0-draft,DRAF
+jejak,T1,"Sisi barat menuju area gerbang","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T2,"Koridor barat bagian dalam","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T3,"Sisi timur menuju area gerbang","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T4,"Dari selatan menuju lapangan upacara","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T5,"Jejak menuju lapangan — terhenti sebelum taman","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T6,"Dari koridor utara sisi barat","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+jejak,T7,"Dari koridor utara sisi timur","Asal dan tujuan; akses; pencocokan lima jalur dalam dokumen",belum,,,,0.2.0-draft,DRAF
+sop,earthquake,Gempa bumi,"Prosedur; waktu tindakan; rute dan tujuan",belum,,,,0.2.0-draft,DRAF
+sop,wind,Angin kencang,"Prosedur; waktu tindakan; rute dan tujuan",belum,,,,0.2.0-draft,DRAF
+sop,flood,Genangan,"Prosedur; waktu tindakan; rute dan tujuan",belum,,,,0.2.0-draft,DRAF

@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:15,000
+DRAF · 0.2.0-draft
+Kenali lingkungan sekolah.
+SMAN 1 Gedeg · versi 0.2.0-draft. Pintu, koridor, dan tujuan diperbarui dari keterangan pengguna.
+
+2
+00:00:15,000 --> 00:00:30,000
+G–H memiliki dua lantai.
+Koridor lantai atas terhubung. Tangga berada di ujung kiri G dan ujung kanan H. Bentuk tangga masih ilustratif.
+
+3
+00:00:30,000 --> 00:00:45,000
+Kenali bukaan setiap pintu.
+G–H lantai 1 membuka keluar; pintu bawah G berayun dua arah. H paling kanan lantai 1 berdaun tunggal. G lantai 2 membuka ke dalam.
+
+4
+00:00:45,000 --> 00:01:00,000
+Menuju lapangan utama KU.
+Pos A1 terbuka tanpa pintu. Gerbang kiri menjadi akses normal menuju penyeberangan jalan dan KU. Gerbang kanan perlu dibuka petugas.
+
+5
+00:01:00,000 --> 00:01:15,000
+Perhatikan pengecualian pintu.
+A: satu daun ke dalam. C paling kiri dan O bagian atas: dua daun geser. M paling kiri: satu daun ke luar. UKS berada di sambungan F–I.
+
+6
+00:01:15,000 --> 00:01:30,000
+K1 dan K2 bersifat sementara.
+Saat akses keluar padat atau terhalang, K1 dan K2 menjadi pilihan sementara. Alokasi gedung dan kapasitas belum ditetapkan.
+
+7
+00:01:30,000 --> 00:01:45,000
+Angin kencang: perlindungan dalam ruang.
+KU, K1, dan K2 tidak menjadi tujuan aktif. Ruang perlindungan yang sesuai belum ditentukan oleh sekolah.
+
+8
+00:01:45,000 --> 00:02:00,000
+Verifikasi sebelum digunakan.
+Cocokkan posisi pintu, hubungan ruang, akses, penyeberangan, dan SOP bersama tim sekolah. Draf ini belum menjadi panduan operasional.

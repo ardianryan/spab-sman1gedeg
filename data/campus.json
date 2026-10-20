@@ -1,0 +1,4558 @@
+{
+  "meta": {
+    "version": "0.2.0-draft",
+    "date": "2026-10-20",
+    "status": "draft",
+    "school": "SMAN 1 Gedeg",
+    "warning": "DRAF — BELUM DIVERIFIKASI UNTUK PENGGUNAAN OPERASIONAL",
+    "coordinateSystem": "Piksel denah sumber, bukan meter atau koordinat geografis",
+    "viewBox": [
+      280,
+      -130,
+      770,
+      1180
+    ],
+    "review": null
+  },
+  "sources": [
+    {
+      "id": "map",
+      "name": "Peta Jalur Evakuasi.jpg",
+      "kind": "denah",
+      "note": "Penelusuran manual; geometri perkiraan visual, bukan hasil ukur."
+    },
+    {
+      "id": "generated",
+      "name": "Dua berkas Gemini_Generated_Image",
+      "kind": "ilustrasi",
+      "note": "Belum terbukti sebagai citra survei; tidak dipakai untuk mengesahkan akses."
+    },
+    {
+      "id": "risk",
+      "name": "DOKUMEN KAJIAN RISIKO BENCANA SEKOLAH.docx",
+      "kind": "dokumen",
+      "note": "Informasi perorangan tidak disalin ke aplikasi."
+    },
+    {
+      "id": "slides",
+      "name": "Satuan Pendidikan Aman Bencana - SMAN 1 GEDEG.pptx",
+      "kind": "presentasi",
+      "note": "Slide 12 memuat denah; istilah lapangan perlu dicocokkan."
+    },
+    {
+      "id": "user",
+      "name": "Konfirmasi pengguna — akses dan arahan BPBD",
+      "kind": "user-confirmation",
+      "note": "Informasi disampaikan pengguna; bukan dokumen pengesahan BPBD."
+    },
+    {
+      "id": "gh1",
+      "name": "Denah G–H lantai 1",
+      "kind": "annotated-image",
+      "note": "Penelusuran visual gh-lantai-1.png; posisi belum diukur."
+    },
+    {
+      "id": "gh2",
+      "name": "Denah G–H lantai 2",
+      "kind": "annotated-image",
+      "note": "Penelusuran visual gh-lantai-2.png; posisi belum diukur."
+    },
+    {
+      "id": "doors",
+      "name": "Pintu kampus dan UKS",
+      "kind": "annotated-image",
+      "note": "Penelusuran visual pintu-kampus.png; posisi belum diukur."
+    },
+    {
+      "id": "south",
+      "name": "Pintu N, O, M dan bangunan terpisah O",
+      "kind": "annotated-image",
+      "note": "Penelusuran visual pintu-selatan.png; posisi belum diukur."
+    },
+    {
+      "id": "user-bkl",
+      "name": "Koreksi pintu B, L dan K",
+      "kind": "user-confirmation",
+      "note": "B tengah mempunyai pintu di ujung kiri; L tiga ruang dengan pintu kiri/bawah; K tiga ruang. Keterangan awal pintu kanan K telah dikoreksi melalui user-k-correction."
+    },
+    {
+      "id": "user-k-correction",
+      "name": "Koreksi posisi pintu K",
+      "kind": "user-confirmation",
+      "note": "Koreksi terakhir mengganti keterangan sisi kanan: tiga pintu berada di sisi kiri dekat ujung bawah setiap ruang, dua daun membuka ke luar."
+    },
+    {
+      "id": "gardens",
+      "name": "Taman lapangan upacara",
+      "kind": "user-confirmation",
+      "note": "Dua taman pada gambar udara dan penandaan pengguna. Bentuk ditelusuri secara skematis."
+    },
+    {
+      "id": "trace-t5-revision",
+      "name": "Pemendekan jejak T5 sebelum taman",
+      "kind": "derived-review",
+      "note": "Ujung jejak lama [525,603] bertabrakan dengan taman barat. Tampilan berhenti di [507,603]; tidak membuat rute mengitari taman. Jejak lama disimpan pada data/history/campus-0.1.0.json."
+    }
+  ],
+  "buildings": [
+    {
+      "id": "A",
+      "code": "A",
+      "name": null,
+      "polygon": [
+        [
+          415,
+          490
+        ],
+        [
+          460,
+          490
+        ],
+        [
+          456,
+          695
+        ],
+        [
+          411,
+          695
+        ]
+      ],
+      "label": [
+        435.5,
+        592.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "B",
+      "code": "B",
+      "name": null,
+      "polygon": [
+        [
+          480,
+          743
+        ],
+        [
+          605,
+          743
+        ],
+        [
+          605,
+          788
+        ],
+        [
+          480,
+          788
+        ]
+      ],
+      "label": [
+        542.5,
+        765.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "C",
+      "code": "C",
+      "name": null,
+      "polygon": [
+        [
+          631,
+          743
+        ],
+        [
+          714,
+          743
+        ],
+        [
+          714,
+          788
+        ],
+        [
+          631,
+          788
+        ]
+      ],
+      "label": [
+        672.5,
+        765.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "D",
+      "code": "D",
+      "name": null,
+      "polygon": [
+        [
+          481,
+          463
+        ],
+        [
+          597,
+          463
+        ],
+        [
+          598,
+          504
+        ],
+        [
+          481,
+          504
+        ]
+      ],
+      "label": [
+        539.2,
+        483.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "E",
+      "code": "E",
+      "name": null,
+      "polygon": [
+        [
+          631,
+          464
+        ],
+        [
+          751,
+          466
+        ],
+        [
+          751,
+          505
+        ],
+        [
+          631,
+          505
+        ]
+      ],
+      "label": [
+        691.0,
+        485.0
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "F",
+      "code": "F",
+      "name": null,
+      "polygon": [
+        [
+          768,
+          466
+        ],
+        [
+          802,
+          467
+        ],
+        [
+          802,
+          580
+        ],
+        [
+          764,
+          579
+        ]
+      ],
+      "label": [
+        785,
+        554
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "G",
+      "code": "G",
+      "name": null,
+      "polygon": [
+        [
+          564,
+          401
+        ],
+        [
+          605,
+          401
+        ],
+        [
+          605,
+          392
+        ],
+        [
+          625,
+          393
+        ],
+        [
+          626,
+          401
+        ],
+        [
+          662,
+          402
+        ],
+        [
+          662,
+          440
+        ],
+        [
+          564,
+          440
+        ]
+      ],
+      "label": [
+        614.1,
+        408.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": 2
+    },
+    {
+      "id": "H",
+      "code": "H",
+      "name": null,
+      "polygon": [
+        [
+          664,
+          402
+        ],
+        [
+          803,
+          405
+        ],
+        [
+          803,
+          441
+        ],
+        [
+          663,
+          439
+        ]
+      ],
+      "label": [
+        733.2,
+        421.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": 2
+    },
+    {
+      "id": "I",
+      "code": "I",
+      "name": null,
+      "polygon": [
+        [
+          763,
+          582
+        ],
+        [
+          802,
+          585
+        ],
+        [
+          789,
+          645
+        ],
+        [
+          762,
+          740
+        ],
+        [
+          723,
+          727
+        ],
+        [
+          752,
+          638
+        ]
+      ],
+      "label": [
+        765.2,
+        652.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "J",
+      "code": "J",
+      "name": null,
+      "polygon": [
+        [
+          392,
+          716
+        ],
+        [
+          437,
+          716
+        ],
+        [
+          433,
+          799
+        ],
+        [
+          388,
+          799
+        ]
+      ],
+      "label": [
+        412.5,
+        757.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "K",
+      "code": "K",
+      "name": null,
+      "polygon": [
+        [
+          693,
+          856
+        ],
+        [
+          733,
+          875
+        ],
+        [
+          690,
+          967
+        ],
+        [
+          650,
+          947
+        ]
+      ],
+      "label": [
+        691.5,
+        911.2
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "L",
+      "code": "L",
+      "name": null,
+      "polygon": [
+        [
+          823,
+          405
+        ],
+        [
+          857,
+          405
+        ],
+        [
+          857,
+          510
+        ],
+        [
+          823,
+          510
+        ]
+      ],
+      "label": [
+        840.0,
+        457.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "M",
+      "code": "M",
+      "name": null,
+      "polygon": [
+        [
+          545,
+          958
+        ],
+        [
+          637,
+          957
+        ],
+        [
+          637,
+          1001
+        ],
+        [
+          545,
+          1002
+        ]
+      ],
+      "label": [
+        591.0,
+        979.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "N",
+      "code": "N",
+      "name": null,
+      "polygon": [
+        [
+          362,
+          842
+        ],
+        [
+          407,
+          841
+        ],
+        [
+          402,
+          1004
+        ],
+        [
+          357,
+          1004
+        ]
+      ],
+      "label": [
+        382.0,
+        922.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "O",
+      "code": "O",
+      "name": null,
+      "polygon": [
+        [
+          525,
+          864
+        ],
+        [
+          564,
+          864
+        ],
+        [
+          564,
+          954
+        ],
+        [
+          524,
+          954
+        ]
+      ],
+      "label": [
+        544.2,
+        909.0
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false,
+      "structure": "enclosed",
+      "floorCount": null
+    },
+    {
+      "id": "A1",
+      "code": "A1",
+      "name": "Pos satpam",
+      "polygon": [
+        [
+          644,
+          263
+        ],
+        [
+          670,
+          247
+        ],
+        [
+          688,
+          276
+        ],
+        [
+          660,
+          291
+        ]
+      ],
+      "label": [
+        665.5,
+        269.2
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "user",
+      "verified": false,
+      "structure": "open",
+      "floorCount": null
+    }
+  ],
+  "unidentified": [
+    {
+      "id": "U1",
+      "polygon": [
+        [
+          690,
+          237
+        ],
+        [
+          786,
+          183
+        ],
+        [
+          808,
+          218
+        ],
+        [
+          711,
+          271
+        ]
+      ]
+    },
+    {
+      "id": "U2",
+      "polygon": [
+        [
+          881,
+          179
+        ],
+        [
+          925,
+          181
+        ],
+        [
+          924,
+          295
+        ],
+        [
+          881,
+          294
+        ]
+      ]
+    },
+    {
+      "id": "U3",
+      "polygon": [
+        [
+          468,
+          374
+        ],
+        [
+          525,
+          375
+        ],
+        [
+          524,
+          441
+        ],
+        [
+          468,
+          440
+        ]
+      ]
+    },
+    {
+      "id": "U4",
+      "polygon": [
+        [
+          420,
+          441
+        ],
+        [
+          450,
+          442
+        ],
+        [
+          451,
+          476
+        ],
+        [
+          419,
+          476
+        ]
+      ]
+    },
+    {
+      "id": "U5",
+      "polygon": [
+        [
+          339,
+          479
+        ],
+        [
+          381,
+          478
+        ],
+        [
+          382,
+          549
+        ],
+        [
+          338,
+          548
+        ]
+      ]
+    },
+    {
+      "id": "U6",
+      "polygon": [
+        [
+          338,
+          582
+        ],
+        [
+          381,
+          582
+        ],
+        [
+          380,
+          674
+        ],
+        [
+          338,
+          674
+        ]
+      ]
+    },
+    {
+      "id": "U7",
+      "polygon": [
+        [
+          335,
+          716
+        ],
+        [
+          368,
+          716
+        ],
+        [
+          365,
+          800
+        ],
+        [
+          333,
+          800
+        ]
+      ]
+    },
+    {
+      "id": "U8",
+      "polygon": [
+        [
+          335,
+          805
+        ],
+        [
+          360,
+          805
+        ],
+        [
+          359,
+          837
+        ],
+        [
+          333,
+          837
+        ]
+      ]
+    },
+    {
+      "id": "U10",
+      "polygon": [
+        [
+          825,
+          516
+        ],
+        [
+          868,
+          515
+        ],
+        [
+          858,
+          540
+        ],
+        [
+          824,
+          540
+        ]
+      ]
+    }
+  ],
+  "grounds": [
+    {
+      "id": "upacara",
+      "name": "Lapangan upacara",
+      "polygon": [
+        [
+          495,
+          534
+        ],
+        [
+          735,
+          534
+        ],
+        [
+          734,
+          620
+        ],
+        [
+          706,
+          711
+        ],
+        [
+          498,
+          715
+        ]
+      ],
+      "label": [
+        580,
+        645
+      ]
+    },
+    {
+      "id": "basket",
+      "name": "Lapangan basket",
+      "polygon": [
+        [
+          434,
+          863
+        ],
+        [
+          516,
+          863
+        ],
+        [
+          513,
+          1003
+        ],
+        [
+          430,
+          1003
+        ]
+      ],
+      "label": [
+        474,
+        905
+      ]
+    },
+    {
+      "id": "voli",
+      "name": "Lapangan voli",
+      "polygon": [
+        [
+          815,
+          204
+        ],
+        [
+          869,
+          205
+        ],
+        [
+          869,
+          288
+        ],
+        [
+          814,
+          286
+        ]
+      ],
+      "label": [
+        841,
+        247
+      ]
+    },
+    {
+      "id": "utama",
+      "name": "Lapangan utama (skematis)",
+      "polygon": [
+        [
+          330,
+          -110
+        ],
+        [
+          700,
+          -110
+        ],
+        [
+          680,
+          80
+        ],
+        [
+          350,
+          225
+        ]
+      ],
+      "label": [
+        510,
+        -55
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "K1",
+      "name": "Titik kumpul sementara · upacara",
+      "position": [
+        649,
+        667
+      ],
+      "source": "map",
+      "verified": false,
+      "capacity": null,
+      "review": null,
+      "role": "temporary",
+      "scenarioIds": [
+        "earthquake",
+        "flood"
+      ],
+      "condition": "crowded-or-blocked"
+    },
+    {
+      "id": "K2",
+      "name": "Titik kumpul sementara · basket",
+      "position": [
+        476,
+        982
+      ],
+      "source": "map",
+      "verified": false,
+      "capacity": null,
+      "review": null,
+      "role": "temporary",
+      "scenarioIds": [
+        "earthquake",
+        "flood"
+      ],
+      "condition": "crowded-or-blocked"
+    },
+    {
+      "id": "KU",
+      "name": "Lapangan utama di luar sekolah",
+      "position": [
+        530,
+        60
+      ],
+      "capacity": null,
+      "review": null,
+      "source": "user",
+      "verified": false,
+      "role": "primary",
+      "scenarioIds": [
+        "earthquake",
+        "flood"
+      ],
+      "condition": "normal"
+    }
+  ],
+  "accessNodes": [],
+  "routes": [],
+  "referenceTraces": [
+    {
+      "id": "T1",
+      "category": "utama",
+      "name": "Sisi barat menuju area gerbang",
+      "points": [
+        [
+          418,
+          910
+        ],
+        [
+          418,
+          840
+        ],
+        [
+          407,
+          826
+        ],
+        [
+          388,
+          823
+        ],
+        [
+          377,
+          811
+        ],
+        [
+          377,
+          704
+        ],
+        [
+          384,
+          695
+        ],
+        [
+          397,
+          692
+        ],
+        [
+          401,
+          681
+        ],
+        [
+          401,
+          504
+        ],
+        [
+          411,
+          489
+        ],
+        [
+          424,
+          484
+        ],
+        [
+          445,
+          484
+        ],
+        [
+          461,
+          473
+        ],
+        [
+          470,
+          457
+        ],
+        [
+          486,
+          451
+        ],
+        [
+          514,
+          450
+        ],
+        [
+          532,
+          437
+        ],
+        [
+          543,
+          416
+        ],
+        [
+          543,
+          388
+        ],
+        [
+          554,
+          372
+        ],
+        [
+          570,
+          366
+        ],
+        [
+          598,
+          366
+        ],
+        [
+          610,
+          355
+        ],
+        [
+          619,
+          339
+        ],
+        [
+          619,
+          305
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T2",
+      "category": "utama",
+      "name": "Koridor barat bagian dalam",
+      "points": [
+        [
+          468,
+          848
+        ],
+        [
+          468,
+          478
+        ],
+        [
+          477,
+          458
+        ],
+        [
+          488,
+          451
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T3",
+      "category": "utama",
+      "name": "Sisi timur menuju area gerbang",
+      "points": [
+        [
+          632,
+          900
+        ],
+        [
+          632,
+          833
+        ],
+        [
+          639,
+          814
+        ],
+        [
+          656,
+          801
+        ],
+        [
+          765,
+          801
+        ],
+        [
+          780,
+          794
+        ],
+        [
+          788,
+          779
+        ],
+        [
+          793,
+          696
+        ],
+        [
+          800,
+          681
+        ],
+        [
+          813,
+          668
+        ],
+        [
+          813,
+          325
+        ],
+        [
+          807,
+          311
+        ],
+        [
+          791,
+          302
+        ],
+        [
+          637,
+          302
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T4",
+      "category": "alternatif",
+      "name": "Dari selatan menuju lapangan upacara",
+      "points": [
+        [
+          618,
+          900
+        ],
+        [
+          618,
+          742
+        ],
+        [
+          608,
+          730
+        ],
+        [
+          608,
+          685
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T5",
+      "category": "alternatif",
+      "name": "Jejak menuju lapangan — terhenti sebelum taman",
+      "points": [
+        [
+          461,
+          848
+        ],
+        [
+          461,
+          630
+        ],
+        [
+          469,
+          612
+        ],
+        [
+          483,
+          603
+        ],
+        [
+          507,
+          603
+        ]
+      ],
+      "source": "trace-t5-revision",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T6",
+      "category": "alternatif",
+      "name": "Dari koridor utara sisi barat",
+      "points": [
+        [
+          540,
+          451
+        ],
+        [
+          591,
+          451
+        ],
+        [
+          602,
+          459
+        ],
+        [
+          609,
+          474
+        ],
+        [
+          609,
+          534
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T7",
+      "category": "alternatif",
+      "name": "Dari koridor utara sisi timur",
+      "points": [
+        [
+          758,
+          454
+        ],
+        [
+          644,
+          454
+        ],
+        [
+          628,
+          458
+        ],
+        [
+          619,
+          472
+        ],
+        [
+          619,
+          534
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    }
+  ],
+  "facilities": [
+    {
+      "id": "apar",
+      "name": "APAR",
+      "quantity": 4,
+      "locationText": "Pos satpam (2), TU (1), ruang waka (1)",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    },
+    {
+      "id": "p3k",
+      "name": "Kotak P3K",
+      "quantity": 35,
+      "locationText": "Kelas, kantor, dan kantin; posisi rinci belum tersedia",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    },
+    {
+      "id": "tandu",
+      "name": "Tandu",
+      "quantity": 2,
+      "locationText": "UKS; posisi gedung belum dicocokkan",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    }
+  ],
+  "hazards": [
+    {
+      "id": "gate",
+      "name": "Genangan akses gerbang",
+      "locationText": "Gerbang utama dan parkir; batas area belum dipetakan",
+      "position": null,
+      "source": "risk"
+    },
+    {
+      "id": "electric",
+      "name": "Tiang berkarat",
+      "locationText": "Dekat lapangan voli; koordinat belum diperiksa",
+      "position": null,
+      "source": "risk"
+    },
+    {
+      "id": "structure",
+      "name": "Kondisi struktur bangunan",
+      "locationText": "Dokumen memuat keterangan kondisi ruang yang tidak konsisten; perlu pemeriksaan",
+      "position": null,
+      "source": "risk"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "reference",
+      "name": "Tinjauan denah",
+      "instruction": "Koridor mengikuti garis referensi. Pintu dan tujuan diperbarui dari konfirmasi pengguna; hubungan ruang yang belum jelas tetap ditandai.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "earthquake",
+      "name": "Gempa bumi",
+      "instruction": "KU merupakan tujuan utama menurut keterangan pengguna. SOP, waktu tindakan, dan rute setiap ruang tetap menunggu peninjauan sekolah.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "wind",
+      "name": "Angin kencang",
+      "instruction": "Ruang perlindungan belum ditentukan. KU, K1, dan K2 tidak digunakan sebagai tujuan angin kencang.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "flood",
+      "name": "Genangan",
+      "instruction": "KU merupakan tujuan utama menurut keterangan pengguna. Akses gerbang yang rawan genangan dan SOP perlu diperiksa sebelum digunakan.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    }
+  ],
+  "uncertainties": [
+    "Nama ruang dan gedung selain pos satpam serta UKS belum dicocokkan.",
+    "Koordinat pintu, batas lapangan, ukuran, arah utara, dan tinggi bangunan belum diukur.",
+    "Sambungan sejumlah ruang ke koridor belum terlihat lengkap; tidak dibuat rute menembus dinding.",
+    "Ruang perlindungan angin kencang belum ditentukan.",
+    "Kapasitas tujuan, alokasi K1/K2, prosedur penyeberangan dan pembukaan gerbang kanan belum ditetapkan.",
+    "Jumlah dan posisi pintu gedung yang tidak ditandai belum tersedia.",
+    "Kondisi ruang pada dokumen lama perlu dicocokkan kembali.",
+    "Sambungan jejak T5 menuju area lapangan setelah penambahan taman perlu ditinjau; jejak berhenti sebelum penghalang."
+  ],
+  "access": {
+    "recordedAt": "2026-10-20",
+    "status": "user-confirmed",
+    "precision": "schematic",
+    "doors": [
+      {
+        "id": "G1-D01",
+        "buildingId": "G",
+        "floor": 1,
+        "position": [
+          603.73,
+          421.12
+        ],
+        "localPosition": [
+          119.5,
+          86.5
+        ],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G1-D02",
+        "buildingId": "G",
+        "floor": 1,
+        "position": [
+          624.07,
+          408.43
+        ],
+        "localPosition": [
+          151.5,
+          66
+        ],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G1-D03",
+        "buildingId": "G",
+        "floor": 1,
+        "position": [
+          624.07,
+          429.17
+        ],
+        "localPosition": [
+          151.5,
+          99.5
+        ],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "both",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G1-D04",
+        "buildingId": "G",
+        "floor": 1,
+        "position": [
+          646.32,
+          431.95
+        ],
+        "localPosition": [
+          186.5,
+          104
+        ],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G2-D01",
+        "buildingId": "G",
+        "floor": 2,
+        "position": [
+          602.99,
+          417.67
+        ],
+        "localPosition": [
+          75.5,
+          70.5
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "inward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G2-D02",
+        "buildingId": "G",
+        "floor": 2,
+        "position": [
+          625.81,
+          416.1
+        ],
+        "localPosition": [
+          111.5,
+          68
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "inward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "G2-D03",
+        "buildingId": "G",
+        "floor": 2,
+        "position": [
+          614.72,
+          431.51
+        ],
+        "localPosition": [
+          94,
+          92.5
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "inward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H2-D01",
+        "buildingId": "H",
+        "floor": 2,
+        "position": [
+          668.6,
+          425.85
+        ],
+        "localPosition": [
+          179,
+          83.5
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H2-D02",
+        "buildingId": "H",
+        "floor": 2,
+        "position": [
+          709.18,
+          425.85
+        ],
+        "localPosition": [
+          243,
+          83.5
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H2-D03",
+        "buildingId": "H",
+        "floor": 2,
+        "position": [
+          764.96,
+          427.1
+        ],
+        "localPosition": [
+          331,
+          85.5
+        ],
+        "source": "gh2",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H1-D01",
+        "buildingId": "H",
+        "floor": 1,
+        "position": [
+          785.2,
+          439.38
+        ],
+        "localPosition": [
+          405,
+          116
+        ],
+        "source": "gh1",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "Pintu paling kanan lantai 1; tanda cyan dan keterangan pengguna memastikan satu daun.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H1-D02",
+        "buildingId": "H",
+        "floor": 1,
+        "position": [676.3, 436.9],
+        "localPosition": [233.5, 111],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "Tanda cyan sisi bawah H, paling kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H1-D03",
+        "buildingId": "H",
+        "floor": 1,
+        "position": [705.6, 436.9],
+        "localPosition": [279.5, 111],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "Tanda cyan sisi bawah H, kedua dari kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "H1-D04",
+        "buildingId": "H",
+        "floor": 1,
+        "position": [762.8, 436.9],
+        "localPosition": [370, 111],
+        "source": "gh1",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": "glass",
+        "marker": true,
+        "precision": "schematic",
+        "note": "Tanda cyan sisi bawah H, ketiga dari kiri; dikonfirmasi pengguna sebagai pintu kupu-kupu membuka ke luar.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "A1-D01",
+        "buildingId": "A",
+        "floor": 1,
+        "position": [
+          459.49,
+          497.47
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "inward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "A1-D02",
+        "buildingId": "A",
+        "floor": 1,
+        "position": [
+          459.49,
+          534.18
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "inward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "A1-D03",
+        "buildingId": "A",
+        "floor": 1,
+        "position": [
+          459.49,
+          577.22
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "inward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "A1-D04",
+        "buildingId": "A",
+        "floor": 1,
+        "position": [
+          459.49,
+          617.72
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "inward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "A1-D05",
+        "buildingId": "A",
+        "floor": 1,
+        "position": [
+          459.49,
+          660.76
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "inward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "D1-D01",
+        "buildingId": "D",
+        "floor": 1,
+        "position": [
+          516.46,
+          502.53
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "D1-D02",
+        "buildingId": "D",
+        "floor": 1,
+        "position": [
+          545.57,
+          502.53
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "D1-D03",
+        "buildingId": "D",
+        "floor": 1,
+        "position": [
+          587.34,
+          464.56
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "E1-D01",
+        "buildingId": "E",
+        "floor": 1,
+        "position": [
+          654.43,
+          505.06
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "E1-D02",
+        "buildingId": "E",
+        "floor": 1,
+        "position": [
+          681.01,
+          505.06
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "E1-D03",
+        "buildingId": "E",
+        "floor": 1,
+        "position": [
+          746.84,
+          505.06
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "F1-D01",
+        "buildingId": "F",
+        "floor": 1,
+        "position": [
+          764.56,
+          492.41
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "F1-D02",
+        "buildingId": "F",
+        "floor": 1,
+        "position": [
+          764.56,
+          517.72
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "UKS — ruang pada sambungan F–I.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "F1-D03",
+        "buildingId": "F",
+        "floor": 1,
+        "position": [
+          764.56,
+          548.1
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "F1-D04",
+        "buildingId": "F",
+        "floor": 1,
+        "position": [
+          765.82,
+          579.75
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "I1-D01",
+        "buildingId": "I",
+        "floor": 1,
+        "position": [
+          755.7,
+          617.72
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "I1-D02",
+        "buildingId": "I",
+        "floor": 1,
+        "position": [
+          743.04,
+          662.03
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "I1-D03",
+        "buildingId": "I",
+        "floor": 1,
+        "position": [
+          726.58,
+          720.25
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "J1-D01",
+        "buildingId": "J",
+        "floor": 1,
+        "position": [
+          435.44,
+          724.05
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "J1-D02",
+        "buildingId": "J",
+        "floor": 1,
+        "position": [
+          435.44,
+          772.15
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "B1-D01",
+        "buildingId": "B",
+        "floor": 1,
+        "position": [
+          484.81,
+          743.04
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [
+          "B-01"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "B1-D02",
+        "buildingId": "B",
+        "floor": 1,
+        "position": [
+          572.15,
+          743.04
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [
+          "B-03"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "C1-D01",
+        "buildingId": "C",
+        "floor": 1,
+        "position": [
+          636.71,
+          743.04
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "sliding",
+        "swing": null,
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "C1-D02",
+        "buildingId": "C",
+        "floor": 1,
+        "position": [
+          673.42,
+          743.04
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "C1-D03",
+        "buildingId": "C",
+        "floor": 1,
+        "position": [
+          694.94,
+          743.04
+        ],
+        "localPosition": null,
+        "source": "doors",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "N1-D01",
+        "buildingId": "N",
+        "floor": 1,
+        "position": [
+          406.78,
+          862.71
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "N1-D02",
+        "buildingId": "N",
+        "floor": 1,
+        "position": [
+          405.93,
+          908.47
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "N1-D03",
+        "buildingId": "N",
+        "floor": 1,
+        "position": [
+          404.24,
+          955.93
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "N1-D04",
+        "buildingId": "N",
+        "floor": 1,
+        "position": [
+          403.39,
+          1000.0
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "O1-D01",
+        "buildingId": "O",
+        "floor": 1,
+        "position": [
+          544.07,
+          864.41
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "sliding",
+        "swing": null,
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "O1-D02",
+        "buildingId": "O",
+        "floor": 1,
+        "position": [
+          598.31,
+          902.54
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "Bangunan terpisah O.",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "M1-D01",
+        "buildingId": "M",
+        "floor": 1,
+        "position": [
+          549.15,
+          959.32
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 1,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "M1-D02",
+        "buildingId": "M",
+        "floor": 1,
+        "position": [
+          578.81,
+          958.47
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "M1-D03",
+        "buildingId": "M",
+        "floor": 1,
+        "position": [
+          603.39,
+          958.47
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "M1-D04",
+        "buildingId": "M",
+        "floor": 1,
+        "position": [
+          633.9,
+          956.78
+        ],
+        "localPosition": null,
+        "source": "south",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": true,
+        "precision": "schematic",
+        "note": "",
+        "roomIds": [],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "B1-D03",
+        "buildingId": "B",
+        "floor": 1,
+        "position": [
+          523,
+          743
+        ],
+        "localPosition": null,
+        "source": "user-bkl",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Pintu ruang tengah B di ujung kiri; melengkapi dua bukaan yang sudah tercatat.",
+        "roomIds": [
+          "B-02"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "L1-D01",
+        "buildingId": "L",
+        "floor": 1,
+        "position": [
+          823,
+          432
+        ],
+        "localPosition": null,
+        "source": "user-bkl",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang L-01: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",
+        "roomIds": [
+          "L-01"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "L1-D02",
+        "buildingId": "L",
+        "floor": 1,
+        "position": [
+          823,
+          467
+        ],
+        "localPosition": null,
+        "source": "user-bkl",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang L-02: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",
+        "roomIds": [
+          "L-02"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "L1-D03",
+        "buildingId": "L",
+        "floor": 1,
+        "position": [
+          823,
+          502
+        ],
+        "localPosition": null,
+        "source": "user-bkl",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang L-03: sisi kiri denah, dekat ujung bawah ruang; posisi skematis.",
+        "roomIds": [
+          "L-03"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "K1-D01",
+        "buildingId": "K",
+        "floor": 1,
+        "position": [
+          681.19,
+          881
+        ],
+        "localPosition": null,
+        "source": "user-k-correction",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang K-01: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",
+        "roomIds": [
+          "K-01"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "K1-D02",
+        "buildingId": "K",
+        "floor": 1,
+        "position": [
+          665.59,
+          914
+        ],
+        "localPosition": null,
+        "source": "user-k-correction",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang K-02: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",
+        "roomIds": [
+          "K-02"
+        ],
+        "connectionStatus": "incomplete"
+      },
+      {
+        "id": "K1-D03",
+        "buildingId": "K",
+        "floor": 1,
+        "position": [
+          653.31,
+          940
+        ],
+        "localPosition": null,
+        "source": "user-k-correction",
+        "leaves": 2,
+        "motion": "swing",
+        "swing": "outward",
+        "material": null,
+        "marker": false,
+        "precision": "schematic",
+        "note": "Ruang K-03: sisi kiri, dekat ujung bawah setiap ruang; koreksi pengguna menggantikan posisi kanan.",
+        "roomIds": [
+          "K-03"
+        ],
+        "connectionStatus": "incomplete"
+      }
+    ],
+    "walls": [
+      {
+        "source": "doors",
+        "points": [
+          [
+            414.34,
+            524.05
+          ],
+          [
+            459.34,
+            524.05
+          ]
+        ],
+        "buildingId": "A"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            413.51,
+            566.46
+          ],
+          [
+            458.51,
+            566.46
+          ]
+        ],
+        "buildingId": "A"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            412.74,
+            605.69
+          ],
+          [
+            457.74,
+            605.69
+          ]
+        ],
+        "buildingId": "A"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            411.94,
+            646.84
+          ],
+          [
+            456.94,
+            646.84
+          ]
+        ],
+        "buildingId": "A"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            529.11,
+            504.0
+          ],
+          [
+            529.11,
+            463.0
+          ]
+        ],
+        "buildingId": "D"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            667.09,
+            464.6
+          ],
+          [
+            667.09,
+            505.0
+          ]
+        ],
+        "buildingId": "E"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            707.59,
+            465.28
+          ],
+          [
+            707.59,
+            505.0
+          ]
+        ],
+        "buildingId": "E"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            766.66,
+            503.95
+          ],
+          [
+            802.0,
+            504.99
+          ]
+        ],
+        "buildingId": "F"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            765.76,
+            529.24
+          ],
+          [
+            802.0,
+            530.31
+          ]
+        ],
+        "buildingId": "F"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            789.37,
+            643.29
+          ],
+          [
+            753.32,
+            631.28
+          ]
+        ],
+        "buildingId": "I"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            776.44,
+            689.19
+          ],
+          [
+            739.35,
+            676.83
+          ]
+        ],
+        "buildingId": "I"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            390.0,
+            757.6
+          ],
+          [
+            435.0,
+            757.6
+          ]
+        ],
+        "buildingId": "J"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            515.83,
+            743.0
+          ],
+          [
+            515.83,
+            788.0
+          ]
+        ],
+        "buildingId": "B"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            556.96,
+            743.0
+          ],
+          [
+            556.96,
+            788.0
+          ]
+        ],
+        "buildingId": "B"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            648.1,
+            743.0
+          ],
+          [
+            648.1,
+            788.0
+          ]
+        ],
+        "buildingId": "C"
+      },
+      {
+        "source": "doors",
+        "points": [
+          [
+            684.81,
+            743.0
+          ],
+          [
+            684.81,
+            788.0
+          ]
+        ],
+        "buildingId": "C"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            406.02,
+            872.88
+          ],
+          [
+            361.05,
+            872.88
+          ]
+        ],
+        "buildingId": "N"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            404.66,
+            917.37
+          ],
+          [
+            359.67,
+            917.37
+          ]
+        ],
+        "buildingId": "N"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            403.24,
+            963.56
+          ],
+          [
+            358.25,
+            963.56
+          ]
+        ],
+        "buildingId": "N"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            559.32,
+            957.84
+          ],
+          [
+            559.32,
+            1001.84
+          ]
+        ],
+        "buildingId": "M"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            585.6,
+            957.56
+          ],
+          [
+            585.6,
+            1001.56
+          ]
+        ],
+        "buildingId": "M"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            608.47,
+            957.31
+          ],
+          [
+            608.47,
+            1001.31
+          ]
+        ],
+        "buildingId": "M"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            717.76,
+            907.61
+          ],
+          [
+            678.01,
+            887.73
+          ]
+        ],
+        "buildingId": "K"
+      },
+      {
+        "source": "south",
+        "points": [
+          [
+            702.19,
+            940.92
+          ],
+          [
+            662.3,
+            920.98
+          ]
+        ],
+        "buildingId": "K"
+      },
+      {
+        "buildingId": "L",
+        "source": "user-bkl",
+        "points": [
+          [
+            823,
+            440
+          ],
+          [
+            857,
+            440
+          ]
+        ]
+      },
+      {
+        "buildingId": "L",
+        "source": "user-bkl",
+        "points": [
+          [
+            823,
+            475
+          ],
+          [
+            857,
+            475
+          ]
+        ]
+      }
+    ],
+    "floorPlans": [
+      {
+        "id": "GH1",
+        "floor": 1,
+        "source": "gh1",
+        "viewBox": [
+          0,
+          15,
+          460,
+          145
+        ],
+        "footprints": [
+          {
+            "buildingId": "G",
+            "polygon": [
+              [
+                57,
+                54
+              ],
+              [
+                124,
+                54
+              ],
+              [
+                124,
+                40
+              ],
+              [
+                154,
+                40
+              ],
+              [
+                154,
+                54
+              ],
+              [
+                213,
+                54
+              ],
+              [
+                213,
+                117
+              ],
+              [
+                57,
+                117
+              ]
+            ]
+          },
+          {
+            "buildingId": "H",
+            "polygon": [
+              [
+                213,
+                54
+              ],
+              [
+                433,
+                58
+              ],
+              [
+                433,
+                117
+              ],
+              [
+                213,
+                117
+              ]
+            ]
+          }
+        ],
+        "walls": [
+          [
+            [
+              119,
+              54
+            ],
+            [
+              119,
+              117
+            ]
+          ],
+          [
+            [
+              151,
+              40
+            ],
+            [
+              151,
+              117
+            ]
+          ],
+          [
+            [
+              187,
+              54
+            ],
+            [
+              187,
+              117
+            ]
+          ],
+          [
+            [
+              151,
+              86
+            ],
+            [
+              187,
+              86
+            ]
+          ],
+          [
+            [
+              306,
+              55
+            ],
+            [
+              306,
+              117
+            ]
+          ],
+          [
+            [
+              392,
+              57
+            ],
+            [
+              392,
+              117
+            ]
+          ]
+        ],
+        "corridor": [
+          [
+            40,
+            130
+          ],
+          [
+            443,
+            130
+          ]
+        ]
+      },
+      {
+        "id": "GH2",
+        "floor": 2,
+        "source": "gh2",
+        "viewBox": [
+          0,
+          15,
+          460,
+          145
+        ],
+        "footprints": [
+          {
+            "buildingId": "G",
+            "polygon": [
+              [
+                14,
+                44
+              ],
+              [
+                78,
+                44
+              ],
+              [
+                78,
+                31
+              ],
+              [
+                113,
+                33
+              ],
+              [
+                113,
+                44
+              ],
+              [
+                170,
+                46
+              ],
+              [
+                170,
+                106
+              ],
+              [
+                14,
+                106
+              ]
+            ]
+          },
+          {
+            "buildingId": "H",
+            "polygon": [
+              [
+                170,
+                46
+              ],
+              [
+                391,
+                51
+              ],
+              [
+                391,
+                106
+              ],
+              [
+                170,
+                106
+              ]
+            ]
+          }
+        ],
+        "walls": [
+          [
+            [
+              75,
+              44
+            ],
+            [
+              75,
+              98
+            ]
+          ],
+          [
+            [
+              113,
+              33
+            ],
+            [
+              113,
+              96
+            ]
+          ],
+          [
+            [
+              149,
+              45
+            ],
+            [
+              149,
+              100
+            ]
+          ],
+          [
+            [
+              232,
+              47
+            ],
+            [
+              232,
+              85
+            ]
+          ],
+          [
+            [
+              316,
+              49
+            ],
+            [
+              316,
+              85
+            ]
+          ],
+          [
+            [
+              14,
+              92
+            ],
+            [
+              149,
+              92
+            ]
+          ],
+          [
+            [
+              149,
+              85
+            ],
+            [
+              391,
+              85
+            ]
+          ]
+        ],
+        "corridor": [
+          [
+            5,
+            121
+          ],
+          [
+            410,
+            121
+          ]
+        ]
+      }
+    ],
+    "nodes": [
+      {
+        "id": "stair-G-1",
+        "position": [
+          548,
+          450
+        ],
+        "floor": 1,
+        "kind": "stairs",
+        "source": "user"
+      },
+      {
+        "id": "stair-G-2",
+        "position": [
+          548,
+          450
+        ],
+        "floor": 2,
+        "kind": "stairs",
+        "source": "user"
+      },
+      {
+        "id": "outside-G",
+        "position": [
+          548,
+          455
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "stair-H-1",
+        "position": [
+          815,
+          450
+        ],
+        "floor": 1,
+        "kind": "stairs",
+        "source": "user"
+      },
+      {
+        "id": "stair-H-2",
+        "position": [
+          815,
+          450
+        ],
+        "floor": 2,
+        "kind": "stairs",
+        "source": "user"
+      },
+      {
+        "id": "outside-H",
+        "position": [
+          815,
+          455
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "gate-left",
+        "position": [
+          619,
+          285
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "gate-right",
+        "position": [
+          706,
+          275
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "KU",
+        "position": [
+          530,
+          60
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "A1-open",
+        "position": [
+          665,
+          301
+        ],
+        "floor": 0,
+        "kind": "open",
+        "source": "user"
+      },
+      {
+        "id": "source-top",
+        "position": [
+          619,
+          305
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T1-start",
+        "position": [
+          418,
+          910
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T1-end",
+        "position": [
+          619,
+          305
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T2-start",
+        "position": [
+          468,
+          848
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T2-end",
+        "position": [
+          488,
+          451
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T3-start",
+        "position": [
+          632,
+          900
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T3-end",
+        "position": [
+          637,
+          302
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T4-start",
+        "position": [
+          618,
+          900
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T4-end",
+        "position": [
+          608,
+          685
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T5-start",
+        "position": [
+          461,
+          848
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T5-end",
+        "position": [
+          507,
+          603
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T6-start",
+        "position": [
+          540,
+          451
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T6-end",
+        "position": [
+          609,
+          534
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T7-start",
+        "position": [
+          758,
+          454
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      },
+      {
+        "id": "T7-end",
+        "position": [
+          619,
+          534
+        ],
+        "floor": 0,
+        "kind": "junction",
+        "source": "user"
+      }
+    ],
+    "edges": [
+      {
+        "id": "stair-G",
+        "fromId": "stair-G-2",
+        "toId": "stair-G-1",
+        "kind": "stairs",
+        "points": [
+          [
+            548,
+            450
+          ],
+          [
+            548,
+            450
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "exit-stair-G",
+        "fromId": "stair-G-1",
+        "toId": "outside-G",
+        "kind": "level-exit",
+        "points": [
+          [
+            548,
+            450
+          ],
+          [
+            548,
+            455
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "stair-H",
+        "fromId": "stair-H-2",
+        "toId": "stair-H-1",
+        "kind": "stairs",
+        "points": [
+          [
+            815,
+            450
+          ],
+          [
+            815,
+            450
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "exit-stair-H",
+        "fromId": "stair-H-1",
+        "toId": "outside-H",
+        "kind": "level-exit",
+        "points": [
+          [
+            815,
+            450
+          ],
+          [
+            815,
+            455
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "corridor-GH-1",
+        "fromId": "stair-G-1",
+        "toId": "stair-H-1",
+        "kind": "corridor",
+        "points": [
+          [
+            548,
+            450
+          ],
+          [
+            815,
+            450
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "corridor-GH-2",
+        "fromId": "stair-G-2",
+        "toId": "stair-H-2",
+        "kind": "corridor",
+        "points": [
+          [
+            548,
+            450
+          ],
+          [
+            815,
+            450
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "gate-approach",
+        "fromId": "source-top",
+        "toId": "gate-left",
+        "kind": "corridor",
+        "points": [
+          [
+            619,
+            305
+          ],
+          [
+            619,
+            285
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "cross-road",
+        "fromId": "gate-left",
+        "toId": "KU",
+        "kind": "crossing",
+        "points": [
+          [
+            619,
+            285
+          ],
+          [
+            588,
+            210
+          ],
+          [
+            530,
+            60
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "A1-left",
+        "fromId": "A1-open",
+        "toId": "source-top",
+        "kind": "corridor",
+        "points": [
+          [
+            665,
+            301
+          ],
+          [
+            619,
+            305
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "A1-right",
+        "fromId": "A1-open",
+        "toId": "gate-right",
+        "kind": "corridor",
+        "points": [
+          [
+            665,
+            301
+          ],
+          [
+            706,
+            275
+          ]
+        ],
+        "condition": "staff-opened",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T1",
+        "fromId": "T1-start",
+        "toId": "T1-end",
+        "kind": "corridor",
+        "points": [
+          [
+            418,
+            910
+          ],
+          [
+            418,
+            840
+          ],
+          [
+            407,
+            826
+          ],
+          [
+            388,
+            823
+          ],
+          [
+            377,
+            811
+          ],
+          [
+            377,
+            704
+          ],
+          [
+            384,
+            695
+          ],
+          [
+            397,
+            692
+          ],
+          [
+            401,
+            681
+          ],
+          [
+            401,
+            504
+          ],
+          [
+            411,
+            489
+          ],
+          [
+            424,
+            484
+          ],
+          [
+            445,
+            484
+          ],
+          [
+            461,
+            473
+          ],
+          [
+            470,
+            457
+          ],
+          [
+            486,
+            451
+          ],
+          [
+            514,
+            450
+          ],
+          [
+            532,
+            437
+          ],
+          [
+            543,
+            416
+          ],
+          [
+            543,
+            388
+          ],
+          [
+            554,
+            372
+          ],
+          [
+            570,
+            366
+          ],
+          [
+            598,
+            366
+          ],
+          [
+            610,
+            355
+          ],
+          [
+            619,
+            339
+          ],
+          [
+            619,
+            305
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T2",
+        "fromId": "T2-start",
+        "toId": "T2-end",
+        "kind": "corridor",
+        "points": [
+          [
+            468,
+            848
+          ],
+          [
+            468,
+            478
+          ],
+          [
+            477,
+            458
+          ],
+          [
+            488,
+            451
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T3",
+        "fromId": "T3-start",
+        "toId": "T3-end",
+        "kind": "corridor",
+        "points": [
+          [
+            632,
+            900
+          ],
+          [
+            632,
+            833
+          ],
+          [
+            639,
+            814
+          ],
+          [
+            656,
+            801
+          ],
+          [
+            765,
+            801
+          ],
+          [
+            780,
+            794
+          ],
+          [
+            788,
+            779
+          ],
+          [
+            793,
+            696
+          ],
+          [
+            800,
+            681
+          ],
+          [
+            813,
+            668
+          ],
+          [
+            813,
+            325
+          ],
+          [
+            807,
+            311
+          ],
+          [
+            791,
+            302
+          ],
+          [
+            637,
+            302
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T4",
+        "fromId": "T4-start",
+        "toId": "T4-end",
+        "kind": "corridor",
+        "points": [
+          [
+            618,
+            900
+          ],
+          [
+            618,
+            742
+          ],
+          [
+            608,
+            730
+          ],
+          [
+            608,
+            685
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T5",
+        "fromId": "T5-start",
+        "toId": "T5-end",
+        "kind": "corridor",
+        "points": [
+          [
+            461,
+            848
+          ],
+          [
+            461,
+            630
+          ],
+          [
+            469,
+            612
+          ],
+          [
+            483,
+            603
+          ],
+          [
+            507,
+            603
+          ]
+        ],
+        "condition": "normal",
+        "source": "trace-t5-revision",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T6",
+        "fromId": "T6-start",
+        "toId": "T6-end",
+        "kind": "corridor",
+        "points": [
+          [
+            540,
+            451
+          ],
+          [
+            591,
+            451
+          ],
+          [
+            602,
+            459
+          ],
+          [
+            609,
+            474
+          ],
+          [
+            609,
+            534
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "physical-T7",
+        "fromId": "T7-start",
+        "toId": "T7-end",
+        "kind": "corridor",
+        "points": [
+          [
+            758,
+            454
+          ],
+          [
+            644,
+            454
+          ],
+          [
+            628,
+            458
+          ],
+          [
+            619,
+            472
+          ],
+          [
+            619,
+            534
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      },
+      {
+        "id": "T1-gate",
+        "fromId": "T1-end",
+        "toId": "source-top",
+        "kind": "corridor",
+        "points": [
+          [
+            619,
+            305
+          ],
+          [
+            619,
+            305
+          ]
+        ],
+        "condition": "normal",
+        "source": "user",
+        "direction": "both",
+        "review": null
+      }
+    ],
+    "gates": [
+      {
+        "id": "gate-left",
+        "name": "Gerbang kiri A1",
+        "position": [
+          619,
+          285
+        ],
+        "condition": "normal",
+        "source": "user"
+      },
+      {
+        "id": "gate-right",
+        "name": "Gerbang kanan A1",
+        "position": [
+          706,
+          275
+        ],
+        "condition": "staff-opened",
+        "source": "user"
+      }
+    ],
+    "buildingParts": [
+      {
+        "id": "O-ANNEX",
+        "buildingId": "O",
+        "name": "O — bangunan terpisah",
+        "polygon": [
+          [
+            572,
+            865
+          ],
+          [
+            598,
+            865
+          ],
+          [
+            598,
+            913
+          ],
+          [
+            571,
+            913
+          ]
+        ],
+        "source": "south"
+      }
+    ],
+    "policies": [
+      {
+        "buildingId": "A",
+        "description": "Satu daun, membuka ke dalam.",
+        "source": "user"
+      },
+      {
+        "buildingId": "B",
+        "description": "Tiga ruang; masing-masing memiliki pintu dua daun membuka ke luar di ujung kiri, termasuk ruang tengah.",
+        "source": "user"
+      },
+      {
+        "buildingId": "C",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "D",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "E",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "F",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "G",
+        "description": "Dua lantai. Lihat detail tiap pintu dan lantai.",
+        "source": "user"
+      },
+      {
+        "buildingId": "H",
+        "description": "Dua lantai. Lihat detail tiap pintu dan lantai.",
+        "source": "user"
+      },
+      {
+        "buildingId": "I",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "J",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "K",
+        "description": "Tiga ruang; masing-masing memiliki pintu dua daun membuka ke luar di sisi kiri, dekat ujung bawah ruang.",
+        "source": "user"
+      },
+      {
+        "buildingId": "L",
+        "description": "Tiga ruang; masing-masing memiliki pintu dua daun membuka ke luar di sisi kiri/bawah pada denah.",
+        "source": "user"
+      },
+      {
+        "buildingId": "M",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "N",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "O",
+        "description": "Dua daun, membuka ke luar; pengecualian dicatat per pintu.",
+        "source": "user"
+      },
+      {
+        "buildingId": "A1",
+        "description": "Bangunan terbuka beratap tanpa pintu.",
+        "source": "user"
+      }
+    ],
+    "rooms": [
+      {
+        "id": "UKS",
+        "name": "UKS",
+        "buildingId": "F",
+        "floor": 1,
+        "polygon": [
+          [
+            760.76,
+            503.8
+          ],
+          [
+            805.06,
+            505.06
+          ],
+          [
+            805.06,
+            530.38
+          ],
+          [
+            760.76,
+            529.11
+          ]
+        ],
+        "doorIds": [
+          "F1-D02"
+        ],
+        "source": "doors",
+        "note": "Ruang pada sambungan F–I, sesuai koreksi pengguna; batas skematis."
+      },
+      {
+        "id": "B-01",
+        "name": "Ruang B-01 (kode teknis)",
+        "buildingId": "B",
+        "floor": 1,
+        "polygon": [
+          [
+            480,
+            743
+          ],
+          [
+            515.83,
+            743
+          ],
+          [
+            515.83,
+            788
+          ],
+          [
+            480,
+            788
+          ]
+        ],
+        "doorIds": [
+          "B1-D01"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "B-02",
+        "name": "Ruang B-02 (kode teknis)",
+        "buildingId": "B",
+        "floor": 1,
+        "polygon": [
+          [
+            515.83,
+            743
+          ],
+          [
+            556.96,
+            743
+          ],
+          [
+            556.96,
+            788
+          ],
+          [
+            515.83,
+            788
+          ]
+        ],
+        "doorIds": [
+          "B1-D03"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "B-03",
+        "name": "Ruang B-03 (kode teknis)",
+        "buildingId": "B",
+        "floor": 1,
+        "polygon": [
+          [
+            556.96,
+            743
+          ],
+          [
+            605,
+            743
+          ],
+          [
+            605,
+            788
+          ],
+          [
+            556.96,
+            788
+          ]
+        ],
+        "doorIds": [
+          "B1-D02"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "L-01",
+        "name": "Ruang L-01 (kode teknis)",
+        "buildingId": "L",
+        "floor": 1,
+        "polygon": [
+          [
+            823,
+            405
+          ],
+          [
+            857,
+            405
+          ],
+          [
+            857,
+            440
+          ],
+          [
+            823,
+            440
+          ]
+        ],
+        "doorIds": [
+          "L1-D01"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "L-02",
+        "name": "Ruang L-02 (kode teknis)",
+        "buildingId": "L",
+        "floor": 1,
+        "polygon": [
+          [
+            823,
+            440
+          ],
+          [
+            857,
+            440
+          ],
+          [
+            857,
+            475
+          ],
+          [
+            823,
+            475
+          ]
+        ],
+        "doorIds": [
+          "L1-D02"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "L-03",
+        "name": "Ruang L-03 (kode teknis)",
+        "buildingId": "L",
+        "floor": 1,
+        "polygon": [
+          [
+            823,
+            475
+          ],
+          [
+            857,
+            475
+          ],
+          [
+            857,
+            510
+          ],
+          [
+            823,
+            510
+          ]
+        ],
+        "doorIds": [
+          "L1-D03"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "K-01",
+        "name": "Ruang K-01 (kode teknis)",
+        "buildingId": "K",
+        "floor": 1,
+        "polygon": [
+          [
+            693,
+            856
+          ],
+          [
+            733,
+            875
+          ],
+          [
+            717.76,
+            907.61
+          ],
+          [
+            678.01,
+            887.73
+          ]
+        ],
+        "doorIds": [
+          "K1-D01"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "K-02",
+        "name": "Ruang K-02 (kode teknis)",
+        "buildingId": "K",
+        "floor": 1,
+        "polygon": [
+          [
+            678.01,
+            887.73
+          ],
+          [
+            717.76,
+            907.61
+          ],
+          [
+            702.19,
+            940.92
+          ],
+          [
+            662.3,
+            920.98
+          ]
+        ],
+        "doorIds": [
+          "K1-D02"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      },
+      {
+        "id": "K-03",
+        "name": "Ruang K-03 (kode teknis)",
+        "buildingId": "K",
+        "floor": 1,
+        "polygon": [
+          [
+            662.3,
+            920.98
+          ],
+          [
+            702.19,
+            940.92
+          ],
+          [
+            690,
+            967
+          ],
+          [
+            650,
+            947
+          ]
+        ],
+        "doorIds": [
+          "K1-D03"
+        ],
+        "source": "user-bkl",
+        "note": "Pembagian tiga ruang sesuai keterangan pengguna; nama ruang belum diketahui."
+      }
+    ]
+  },
+  "obstacles": [
+    {
+      "id": "garden-west",
+      "name": "Taman barat",
+      "kind": "garden",
+      "polygon": [
+        [
+          514,
+          555
+        ],
+        [
+          600,
+          555
+        ],
+        [
+          600,
+          613
+        ],
+        [
+          514,
+          613
+        ]
+      ],
+      "source": "gardens",
+      "verified": false
+    },
+    {
+      "id": "garden-east",
+      "name": "Taman timur",
+      "kind": "garden",
+      "polygon": [
+        [
+          634,
+          557
+        ],
+        [
+          715,
+          557
+        ],
+        [
+          715,
+          615
+        ],
+        [
+          634,
+          615
+        ]
+      ],
+      "source": "gardens",
+      "verified": false
+    }
+  ]
+}

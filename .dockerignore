@@ -1,0 +1,12 @@
+.git
+.github
+node_modules
+dist
+artifacts
+test-results
+playwright-report
+*.zip
+*.docx
+*.pptx
+*.tsbuildinfo
+.DS_Store

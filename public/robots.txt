@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /?video=
+Disallow: /reference/
+
+Sitemap: https://spab.sman1gedeg.sch.id/sitemap.xml

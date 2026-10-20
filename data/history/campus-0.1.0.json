@@ -1,0 +1,1315 @@
+{
+  "meta": {
+    "version": "0.1.0-draft",
+    "date": "2026-10-20",
+    "status": "draft",
+    "school": "SMAN 1 Gedeg",
+    "warning": "DRAF — BELUM DIVERIFIKASI UNTUK PENGGUNAAN OPERASIONAL",
+    "coordinateSystem": "Piksel denah sumber, bukan meter atau koordinat geografis",
+    "viewBox": [
+      280,
+      70,
+      770,
+      980
+    ],
+    "review": null
+  },
+  "sources": [
+    {
+      "id": "map",
+      "name": "Peta Jalur Evakuasi.jpg",
+      "kind": "denah",
+      "note": "Penelusuran manual; geometri perkiraan visual, bukan hasil ukur."
+    },
+    {
+      "id": "generated",
+      "name": "Dua berkas Gemini_Generated_Image",
+      "kind": "ilustrasi",
+      "note": "Belum terbukti sebagai citra survei; tidak dipakai untuk mengesahkan akses."
+    },
+    {
+      "id": "risk",
+      "name": "DOKUMEN KAJIAN RISIKO BENCANA SEKOLAH.docx",
+      "kind": "dokumen",
+      "note": "Informasi perorangan tidak disalin ke aplikasi."
+    },
+    {
+      "id": "slides",
+      "name": "Satuan Pendidikan Aman Bencana - SMAN 1 GEDEG.pptx",
+      "kind": "presentasi",
+      "note": "Slide 12 memuat denah; istilah lapangan perlu dicocokkan."
+    }
+  ],
+  "buildings": [
+    {
+      "id": "A",
+      "code": "A",
+      "name": null,
+      "polygon": [
+        [
+          415,
+          490
+        ],
+        [
+          460,
+          490
+        ],
+        [
+          456,
+          695
+        ],
+        [
+          411,
+          695
+        ]
+      ],
+      "label": [
+        435.5,
+        592.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "B",
+      "code": "B",
+      "name": null,
+      "polygon": [
+        [
+          480,
+          743
+        ],
+        [
+          605,
+          743
+        ],
+        [
+          605,
+          788
+        ],
+        [
+          480,
+          788
+        ]
+      ],
+      "label": [
+        542.5,
+        765.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "C",
+      "code": "C",
+      "name": null,
+      "polygon": [
+        [
+          631,
+          743
+        ],
+        [
+          714,
+          743
+        ],
+        [
+          714,
+          788
+        ],
+        [
+          631,
+          788
+        ]
+      ],
+      "label": [
+        672.5,
+        765.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "D",
+      "code": "D",
+      "name": null,
+      "polygon": [
+        [
+          481,
+          463
+        ],
+        [
+          597,
+          463
+        ],
+        [
+          598,
+          504
+        ],
+        [
+          481,
+          504
+        ]
+      ],
+      "label": [
+        539.2,
+        483.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "E",
+      "code": "E",
+      "name": null,
+      "polygon": [
+        [
+          631,
+          464
+        ],
+        [
+          751,
+          466
+        ],
+        [
+          751,
+          505
+        ],
+        [
+          631,
+          505
+        ]
+      ],
+      "label": [
+        691.0,
+        485.0
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "F",
+      "code": "F",
+      "name": null,
+      "polygon": [
+        [
+          768,
+          466
+        ],
+        [
+          802,
+          467
+        ],
+        [
+          802,
+          580
+        ],
+        [
+          764,
+          579
+        ]
+      ],
+      "label": [
+        784.0,
+        523.0
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "G",
+      "code": "G",
+      "name": null,
+      "polygon": [
+        [
+          564,
+          401
+        ],
+        [
+          605,
+          401
+        ],
+        [
+          605,
+          392
+        ],
+        [
+          625,
+          393
+        ],
+        [
+          626,
+          401
+        ],
+        [
+          662,
+          402
+        ],
+        [
+          662,
+          440
+        ],
+        [
+          564,
+          440
+        ]
+      ],
+      "label": [
+        614.1,
+        408.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "H",
+      "code": "H",
+      "name": null,
+      "polygon": [
+        [
+          664,
+          402
+        ],
+        [
+          803,
+          405
+        ],
+        [
+          803,
+          441
+        ],
+        [
+          663,
+          439
+        ]
+      ],
+      "label": [
+        733.2,
+        421.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "I",
+      "code": "I",
+      "name": null,
+      "polygon": [
+        [
+          763,
+          582
+        ],
+        [
+          802,
+          585
+        ],
+        [
+          789,
+          645
+        ],
+        [
+          762,
+          740
+        ],
+        [
+          723,
+          727
+        ],
+        [
+          752,
+          638
+        ]
+      ],
+      "label": [
+        765.2,
+        652.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "J",
+      "code": "J",
+      "name": null,
+      "polygon": [
+        [
+          392,
+          716
+        ],
+        [
+          437,
+          716
+        ],
+        [
+          433,
+          799
+        ],
+        [
+          388,
+          799
+        ]
+      ],
+      "label": [
+        412.5,
+        757.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "K",
+      "code": "K",
+      "name": null,
+      "polygon": [
+        [
+          693,
+          856
+        ],
+        [
+          733,
+          875
+        ],
+        [
+          690,
+          967
+        ],
+        [
+          650,
+          947
+        ]
+      ],
+      "label": [
+        691.5,
+        911.2
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "L",
+      "code": "L",
+      "name": null,
+      "polygon": [
+        [
+          823,
+          405
+        ],
+        [
+          857,
+          405
+        ],
+        [
+          857,
+          510
+        ],
+        [
+          823,
+          510
+        ]
+      ],
+      "label": [
+        840.0,
+        457.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "M",
+      "code": "M",
+      "name": null,
+      "polygon": [
+        [
+          545,
+          958
+        ],
+        [
+          637,
+          957
+        ],
+        [
+          637,
+          1001
+        ],
+        [
+          545,
+          1002
+        ]
+      ],
+      "label": [
+        591.0,
+        979.5
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "N",
+      "code": "N",
+      "name": null,
+      "polygon": [
+        [
+          362,
+          842
+        ],
+        [
+          407,
+          841
+        ],
+        [
+          402,
+          1004
+        ],
+        [
+          357,
+          1004
+        ]
+      ],
+      "label": [
+        382.0,
+        922.8
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "O",
+      "code": "O",
+      "name": null,
+      "polygon": [
+        [
+          525,
+          864
+        ],
+        [
+          564,
+          864
+        ],
+        [
+          564,
+          954
+        ],
+        [
+          524,
+          954
+        ]
+      ],
+      "label": [
+        544.2,
+        909.0
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    },
+    {
+      "id": "A1",
+      "code": "A1",
+      "name": null,
+      "polygon": [
+        [
+          644,
+          263
+        ],
+        [
+          670,
+          247
+        ],
+        [
+          688,
+          276
+        ],
+        [
+          660,
+          291
+        ]
+      ],
+      "label": [
+        665.5,
+        269.2
+      ],
+      "heightMeters": null,
+      "entrances": [],
+      "source": "map",
+      "verified": false
+    }
+  ],
+  "unidentified": [
+    {
+      "id": "U1",
+      "polygon": [
+        [
+          690,
+          237
+        ],
+        [
+          786,
+          183
+        ],
+        [
+          808,
+          218
+        ],
+        [
+          711,
+          271
+        ]
+      ]
+    },
+    {
+      "id": "U2",
+      "polygon": [
+        [
+          881,
+          179
+        ],
+        [
+          925,
+          181
+        ],
+        [
+          924,
+          295
+        ],
+        [
+          881,
+          294
+        ]
+      ]
+    },
+    {
+      "id": "U3",
+      "polygon": [
+        [
+          468,
+          374
+        ],
+        [
+          525,
+          375
+        ],
+        [
+          524,
+          441
+        ],
+        [
+          468,
+          440
+        ]
+      ]
+    },
+    {
+      "id": "U4",
+      "polygon": [
+        [
+          420,
+          441
+        ],
+        [
+          450,
+          442
+        ],
+        [
+          451,
+          476
+        ],
+        [
+          419,
+          476
+        ]
+      ]
+    },
+    {
+      "id": "U5",
+      "polygon": [
+        [
+          339,
+          479
+        ],
+        [
+          381,
+          478
+        ],
+        [
+          382,
+          549
+        ],
+        [
+          338,
+          548
+        ]
+      ]
+    },
+    {
+      "id": "U6",
+      "polygon": [
+        [
+          338,
+          582
+        ],
+        [
+          381,
+          582
+        ],
+        [
+          380,
+          674
+        ],
+        [
+          338,
+          674
+        ]
+      ]
+    },
+    {
+      "id": "U7",
+      "polygon": [
+        [
+          335,
+          716
+        ],
+        [
+          368,
+          716
+        ],
+        [
+          365,
+          800
+        ],
+        [
+          333,
+          800
+        ]
+      ]
+    },
+    {
+      "id": "U8",
+      "polygon": [
+        [
+          335,
+          805
+        ],
+        [
+          360,
+          805
+        ],
+        [
+          359,
+          837
+        ],
+        [
+          333,
+          837
+        ]
+      ]
+    },
+    {
+      "id": "U9",
+      "polygon": [
+        [
+          572,
+          865
+        ],
+        [
+          598,
+          865
+        ],
+        [
+          598,
+          913
+        ],
+        [
+          571,
+          913
+        ]
+      ]
+    },
+    {
+      "id": "U10",
+      "polygon": [
+        [
+          825,
+          516
+        ],
+        [
+          868,
+          515
+        ],
+        [
+          858,
+          540
+        ],
+        [
+          824,
+          540
+        ]
+      ]
+    }
+  ],
+  "grounds": [
+    {
+      "id": "upacara",
+      "name": "Lapangan upacara",
+      "polygon": [
+        [
+          495,
+          534
+        ],
+        [
+          735,
+          534
+        ],
+        [
+          734,
+          620
+        ],
+        [
+          706,
+          711
+        ],
+        [
+          498,
+          715
+        ]
+      ],
+      "label": [
+        604,
+        600
+      ]
+    },
+    {
+      "id": "basket",
+      "name": "Lapangan basket",
+      "polygon": [
+        [
+          434,
+          863
+        ],
+        [
+          516,
+          863
+        ],
+        [
+          513,
+          1003
+        ],
+        [
+          430,
+          1003
+        ]
+      ],
+      "label": [
+        474,
+        905
+      ]
+    },
+    {
+      "id": "voli",
+      "name": "Lapangan voli",
+      "polygon": [
+        [
+          815,
+          204
+        ],
+        [
+          869,
+          205
+        ],
+        [
+          869,
+          288
+        ],
+        [
+          814,
+          286
+        ]
+      ],
+      "label": [
+        841,
+        247
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "K1",
+      "name": "Titik kumpul sementara · upacara",
+      "position": [
+        649,
+        667
+      ],
+      "source": "map",
+      "verified": false,
+      "capacity": null,
+      "review": null
+    },
+    {
+      "id": "K2",
+      "name": "Titik kumpul sementara · basket",
+      "position": [
+        476,
+        982
+      ],
+      "source": "map",
+      "verified": false,
+      "capacity": null,
+      "review": null
+    }
+  ],
+  "accessNodes": [],
+  "routes": [],
+  "referenceTraces": [
+    {
+      "id": "T1",
+      "category": "utama",
+      "name": "Sisi barat menuju area gerbang",
+      "points": [
+        [
+          418,
+          910
+        ],
+        [
+          418,
+          840
+        ],
+        [
+          407,
+          826
+        ],
+        [
+          388,
+          823
+        ],
+        [
+          377,
+          811
+        ],
+        [
+          377,
+          704
+        ],
+        [
+          384,
+          695
+        ],
+        [
+          397,
+          692
+        ],
+        [
+          401,
+          681
+        ],
+        [
+          401,
+          504
+        ],
+        [
+          411,
+          489
+        ],
+        [
+          424,
+          484
+        ],
+        [
+          445,
+          484
+        ],
+        [
+          461,
+          473
+        ],
+        [
+          470,
+          457
+        ],
+        [
+          486,
+          451
+        ],
+        [
+          514,
+          450
+        ],
+        [
+          532,
+          437
+        ],
+        [
+          543,
+          416
+        ],
+        [
+          543,
+          388
+        ],
+        [
+          554,
+          372
+        ],
+        [
+          570,
+          366
+        ],
+        [
+          598,
+          366
+        ],
+        [
+          610,
+          355
+        ],
+        [
+          619,
+          339
+        ],
+        [
+          619,
+          305
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T2",
+      "category": "utama",
+      "name": "Koridor barat bagian dalam",
+      "points": [
+        [
+          468,
+          848
+        ],
+        [
+          468,
+          478
+        ],
+        [
+          477,
+          458
+        ],
+        [
+          488,
+          451
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T3",
+      "category": "utama",
+      "name": "Sisi timur menuju area gerbang",
+      "points": [
+        [
+          632,
+          900
+        ],
+        [
+          632,
+          833
+        ],
+        [
+          639,
+          814
+        ],
+        [
+          656,
+          801
+        ],
+        [
+          765,
+          801
+        ],
+        [
+          780,
+          794
+        ],
+        [
+          788,
+          779
+        ],
+        [
+          793,
+          696
+        ],
+        [
+          800,
+          681
+        ],
+        [
+          813,
+          668
+        ],
+        [
+          813,
+          325
+        ],
+        [
+          807,
+          311
+        ],
+        [
+          791,
+          302
+        ],
+        [
+          637,
+          302
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T4",
+      "category": "alternatif",
+      "name": "Dari selatan menuju lapangan upacara",
+      "points": [
+        [
+          618,
+          900
+        ],
+        [
+          618,
+          742
+        ],
+        [
+          608,
+          730
+        ],
+        [
+          608,
+          685
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T5",
+      "category": "alternatif",
+      "name": "Dari barat menuju lapangan upacara",
+      "points": [
+        [
+          461,
+          848
+        ],
+        [
+          461,
+          630
+        ],
+        [
+          469,
+          612
+        ],
+        [
+          483,
+          603
+        ],
+        [
+          525,
+          603
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T6",
+      "category": "alternatif",
+      "name": "Dari koridor utara sisi barat",
+      "points": [
+        [
+          540,
+          451
+        ],
+        [
+          591,
+          451
+        ],
+        [
+          602,
+          459
+        ],
+        [
+          609,
+          474
+        ],
+        [
+          609,
+          534
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    },
+    {
+      "id": "T7",
+      "category": "alternatif",
+      "name": "Dari koridor utara sisi timur",
+      "points": [
+        [
+          758,
+          454
+        ],
+        [
+          644,
+          454
+        ],
+        [
+          628,
+          458
+        ],
+        [
+          619,
+          472
+        ],
+        [
+          619,
+          534
+        ]
+      ],
+      "source": "map",
+      "verified": false,
+      "originBuildingId": null,
+      "destinationId": null
+    }
+  ],
+  "facilities": [
+    {
+      "id": "apar",
+      "name": "APAR",
+      "quantity": 4,
+      "locationText": "Pos satpam (2), TU (1), ruang waka (1)",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    },
+    {
+      "id": "p3k",
+      "name": "Kotak P3K",
+      "quantity": 35,
+      "locationText": "Kelas, kantor, dan kantin; posisi rinci belum tersedia",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    },
+    {
+      "id": "tandu",
+      "name": "Tandu",
+      "quantity": 2,
+      "locationText": "UKS; posisi gedung belum dicocokkan",
+      "position": null,
+      "source": "risk",
+      "verified": false
+    }
+  ],
+  "hazards": [
+    {
+      "id": "gate",
+      "name": "Genangan akses gerbang",
+      "locationText": "Gerbang utama dan parkir; batas area belum dipetakan",
+      "position": null,
+      "source": "risk"
+    },
+    {
+      "id": "electric",
+      "name": "Tiang berkarat",
+      "locationText": "Dekat lapangan voli; koordinat belum diperiksa",
+      "position": null,
+      "source": "risk"
+    },
+    {
+      "id": "structure",
+      "name": "Kondisi struktur bangunan",
+      "locationText": "Dokumen memuat keterangan kondisi ruang yang tidak konsisten; perlu pemeriksaan",
+      "position": null,
+      "source": "risk"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "reference",
+      "name": "Tinjauan denah",
+      "instruction": "Jejak dari gambar lama ditampilkan untuk diperiksa. Belum ada hubungan pintu gedung ke jalur yang terverifikasi.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "earthquake",
+      "name": "Gempa bumi",
+      "instruction": "SOP, waktu mulai evakuasi, dan tujuan setiap gedung belum dikonfirmasi. Jejak referensi disembunyikan agar tidak dianggap sebagai rute gempa.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "wind",
+      "name": "Angin kencang",
+      "instruction": "Ruang perlindungan yang sesuai belum ditetapkan pada denah. Jangan menyamakan tujuan skenario ini dengan lapangan terbuka.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    },
+    {
+      "id": "flood",
+      "name": "Genangan",
+      "instruction": "Akses gerbang disebut rawan genangan. Jalur dan tujuan untuk skenario ini belum dikonfirmasi.",
+      "routeIds": [],
+      "verified": false,
+      "review": null
+    }
+  ],
+  "uncertainties": [
+    "Nama gedung A–O dan A1 belum dicocokkan.",
+    "Pintu, tangga, ramp, dan sambungan koridor belum diketahui.",
+    "Tujuan jejak hijau dan oranye perlu diperiksa.",
+    "Istilah lapangan depan/belakang belum cocok dengan label denah.",
+    "Geometri gambar hasil generasi belum terverifikasi.",
+    "Ukuran, orientasi utara, kapasitas, dan tinggi bangunan belum terukur.",
+    "Kondisi ruang pada tabel sarpras bertentangan dengan kajian kerentanan."
+  ]
+}

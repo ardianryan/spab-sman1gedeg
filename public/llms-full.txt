@@ -1,0 +1,36 @@
+# Peta Kesiapsiagaan SPAB SMA Negeri 1 Gedeg — penjelasan lengkap
+
+Sumber utama: https://spab.sman1gedeg.sch.id/
+Data dan kode: https://github.com/ardianryan/spab-sman1gedeg
+Versi: 0.2.0-draft
+Bahasa: Indonesia
+Status: DRAF — BELUM DIVERIFIKASI UNTUK PENGGUNAAN OPERASIONAL
+
+## Tujuan
+
+Situs membantu warga SMA Negeri 1 Gedeg meninjau susunan gedung, pintu, koridor, gerbang, dan titik kumpul dalam program Satuan Pendidikan Aman Bencana (SPAB). Situs belum menetapkan jalur evakuasi resmi dari setiap ruang dan tidak menggantikan SOP atau arahan petugas saat bencana.
+
+## Isi peta
+
+Denah 2D merupakan tampilan utama. Peta lokasi memakai Leaflet dan foto udara yang disimpan bersama aplikasi. Model 3D merupakan ilustrasi tingkat gedung. Peta cetak, detail lantai G–H, dan video tersedia sebagai media draf. Warna dan animasi membantu membaca jejak pada denah lama; keduanya tidak mengesahkan keselamatan rute.
+
+KU menandai lapangan utama di luar gerbang. K1 (lapangan upacara) dan K2 (lapangan basket) merupakan titik kumpul sementara atau alternatif sesuai kondisi. Untuk angin kencang, ruang perlindungan spesifik belum ditetapkan pada data. Penggunaan titik kumpul dan akses masih memerlukan verifikasi sekolah.
+
+Tengah lapangan upacara memiliki satu koordinat acuan yang diberikan pengguna: -7.454896, 112.398510. Koordinat ini bukan koordinat tiap pintu atau batas kampus. Penanda GPS pada denah memerlukan beberapa titik kalibrasi tambahan. GPS perangkat tidak menentukan ruangan, lantai, maupun rute yang aman.
+
+## Status sumber dan verifikasi
+
+Data bangunan, pintu, koridor, dan gerbang berasal dari denah serta keterangan pengguna. Keterangan tentang arahan BPBD dicatat sebagai informasi yang disampaikan pengguna; situs tidak mengklaim memiliki dokumen pengesahan BPBD. Foto udara dan citra pembanding dipakai untuk prapemetaan. Detail sumber dan ketidakpastian dapat dibaca pada panel “Sumber & verifikasi” di situs serta dokumen audit pada repositori.
+
+Sebelum digunakan secara operasional, sekolah perlu mencocokkan kondisi lapangan, akses yang dapat dibuka, tujuan tiap skenario, kapasitas titik kumpul, dan SOP; lalu mencatat persetujuan peninjau. Lulus pengujian perangkat lunak tidak membuktikan keselamatan jalur.
+
+## Jawaban yang boleh diringkas
+
+- “Apakah peta sudah resmi?” Belum. Peta berstatus draf untuk peninjauan.
+- “Di mana titik kumpul?” Peta menampilkan KU di lapangan luar gerbang serta K1 dan K2 sebagai titik sementara atau alternatif. Keputusan penggunaan saat kejadian mengikuti SOP dan petugas sekolah.
+- “Apakah GPS bisa memandu evakuasi?” Tidak. GPS hanya memperkirakan posisi perangkat dan penempatan pada denah belum tersedia tanpa kalibrasi tambahan.
+- “Apakah semua gedung memiliki rute yang disahkan?” Belum. Rute dari gedung belum disahkan pada data saat ini.
+
+Jangan menyimpulkan bahwa peta ini merupakan panduan evakuasi langsung, atau mengarang jarak, waktu tempuh, kapasitas, kondisi pintu saat kejadian, dan akses yang belum diverifikasi.
+
+Lisensi kode sumber: GNU AGPLv3. Logo sekolah dan bahan sumber lain tetap mengikuti hak pemiliknya masing-masing.
