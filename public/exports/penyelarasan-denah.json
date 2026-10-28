@@ -1,0 +1,248 @@
+{
+  "version": "0.1.0-draft",
+  "date": "2026-10-29",
+  "status": "visual-review-only",
+  "decision": "Gunakan geometri atap sebagai acuan visual sementara dan denah lama sebagai sumber identitas ruang serta akses. Bagian konflik tetap terpisah.",
+  "method": "Kedua denah diproyeksikan ke piksel gambar udara melalui enam pasangan citra yang sama; koordinat GPS tidak digunakan.",
+  "limitations": [
+    "Tapak lama dan atap baru menggambarkan objek berbeda: teritisan, perspektif, dan ketidakakuratan penelusuran dapat menimbulkan selisih.",
+    "Nilai tumpang tindih bukan tingkat kepastian identitas atau bukti akurasi di lapangan.",
+    "Pintu, batas ruang, tangga, dan rute tidak dipindahkan otomatis."
+  ],
+  "entries": [
+    {
+      "roofId": "R01",
+      "label": "A",
+      "status": "shifted",
+      "reason": "Posisi memanjang di sisi barat cocok; tapak lama bergeser terhadap atap.",
+      "decision": "Gunakan garis atap baru sebagai acuan bentuk visual; tempatkan ulang pintu A dengan mempertahankan satu daun dan bukaan ke dalam.",
+      "overlap": {
+        "oldCoveragePercent": 39,
+        "intersectionOverUnionPercent": 22,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R02",
+      "label": "B",
+      "status": "similar",
+      "reason": "Bentuk memanjang dan posisi di selatan lapangan sesuai.",
+      "decision": "Pertahankan kode B; gunakan bentuk atap baru. Tiga ruang dan pintu tetap mengikuti catatan lama.",
+      "overlap": {
+        "oldCoveragePercent": 84,
+        "intersectionOverUnionPercent": 60,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R03",
+      "label": "C",
+      "status": "partial",
+      "reason": "Posisi di sebelah timur B cocok; panjang dan letak tepi berbeda.",
+      "decision": "Gunakan atap baru untuk visual; pertahankan pintu geser dua daun pada ruang paling kiri.",
+      "overlap": {
+        "oldCoveragePercent": 64,
+        "intersectionOverUnionPercent": 40,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R04",
+      "label": "D / E",
+      "status": "shared-roof",
+      "reason": "Satu bidang atap meliputi posisi D dan E; batas ruang tidak terbaca dari atap.",
+      "decision": "Pertahankan D dan E sebagai dua identitas. Jangan menutup atau menghapus jalur di antaranya berdasarkan atap.",
+      "overlap": {
+        "oldCoveragePercent": 78,
+        "intersectionOverUnionPercent": 46,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R05",
+      "label": "F / UKS",
+      "status": "shared-roof",
+      "reason": "Letak sisi timur lapangan sesuai; batas UKS tidak terpisah pada penelusuran atap.",
+      "decision": "Pertahankan UKS sebagai ruang pada sambungan F–I. Atap gabungan tidak mengubah identitas ruang.",
+      "overlap": {
+        "oldCoveragePercent": 88,
+        "intersectionOverUnionPercent": 50,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R06",
+      "label": "G",
+      "status": "shared-roof",
+      "reason": "Baris utara dan tonjolan G cocok secara umum; pembagian panjang G–H berbeda.",
+      "decision": "Pertahankan kode G, dua lantai, tangga kiri, dan detail pintu. Batas G–H perlu ditinjau pada denah lantai.",
+      "overlap": {
+        "oldCoveragePercent": 78,
+        "intersectionOverUnionPercent": 43,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R07",
+      "label": "H",
+      "status": "shared-roof",
+      "reason": "Posisi bersebelahan dengan G sesuai; panjang atap tidak sama dengan batas gedung lama.",
+      "decision": "Pertahankan H, dua lantai, tangga kanan, dan koridor terhubung. Jangan memindahkan batas ruang hanya dari atap.",
+      "overlap": {
+        "oldCoveragePercent": 82,
+        "intersectionOverUnionPercent": 48,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R08",
+      "label": "I",
+      "status": "shifted",
+      "reason": "Posisi sisi tenggara cocok, tetapi kemiringan dan tepi berbeda.",
+      "decision": "Gunakan arah atap baru untuk draf visual; tinjau ulang letak koridor serta pintu sebelum dipindahkan.",
+      "overlap": {
+        "oldCoveragePercent": 45,
+        "intersectionOverUnionPercent": 27,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R09",
+      "label": "J",
+      "status": "similar",
+      "reason": "Bentuk dan posisi di antara A dan N paling dekat secara relatif.",
+      "decision": "Pertahankan kode J dan gunakan atap baru sebagai acuan visual. Bukaan pintu tetap mengikuti data lama.",
+      "overlap": {
+        "oldCoveragePercent": 92,
+        "intersectionOverUnionPercent": 58,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R10",
+      "label": "K",
+      "status": "shifted",
+      "reason": "Kedua denah menempatkan K miring di tenggara, tetapi pergeserannya besar.",
+      "decision": "Utamakan atap baru untuk bentuk visual; tiga ruang dan pintu kiri bawah tetap dipertahankan sebagai informasi akses.",
+      "overlap": {
+        "oldCoveragePercent": 27,
+        "intersectionOverUnionPercent": 14,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R11",
+      "label": "L",
+      "status": "similar",
+      "reason": "Tapak lama berada di dalam bidang atap baru dan orientasinya sesuai.",
+      "decision": "Pertahankan L dengan bentuk atap baru; tiga ruang dan pintu kiri/bawah mengikuti catatan lama.",
+      "overlap": {
+        "oldCoveragePercent": 100,
+        "intersectionOverUnionPercent": 63,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R12",
+      "label": "M",
+      "status": "similar",
+      "reason": "Bentuk memanjang di sisi selatan cocok; bidang atap baru lebih besar.",
+      "decision": "Gunakan atap baru sebagai acuan visual; pintu ujung kiri satu daun tetap dipertahankan.",
+      "overlap": {
+        "oldCoveragePercent": 86,
+        "intersectionOverUnionPercent": 48,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R13",
+      "label": "N",
+      "status": "partial",
+      "reason": "Bangunan memanjang di sisi barat daya sesuai; lebar dan posisi tepi berbeda.",
+      "decision": "Pertahankan kode N, gunakan bentuk atap sebagai draf visual, dan tinjau titik sudutnya terpisah dari GPS.",
+      "overlap": {
+        "oldCoveragePercent": 60,
+        "intersectionOverUnionPercent": 40,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R14",
+      "label": "O",
+      "status": "partial",
+      "reason": "Bangunan utama O berada pada kelompok yang sama; letak dan ukuran berbeda.",
+      "decision": "Pertahankan O serta pintu geser dua daun bagian atas; posisi pintu tidak disalin otomatis.",
+      "overlap": {
+        "oldCoveragePercent": 72,
+        "intersectionOverUnionPercent": 46,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R15",
+      "label": "O · terpisah",
+      "status": "conflict",
+      "reason": "Tapak O terpisah pada denah lama tidak bertumpang tindih dengan calon atap ini.",
+      "decision": "Tunda penyatuan. Label O pada R15 hanya calon pasangan, bukan keputusan identitas final.",
+      "overlap": {
+        "oldCoveragePercent": 0,
+        "intersectionOverUnionPercent": 0,
+        "samplingStepPixels": 2
+      }
+    },
+    {
+      "roofId": "R16",
+      "label": "R16",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    },
+    {
+      "roofId": "R17",
+      "label": "R17",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    },
+    {
+      "roofId": "R18",
+      "label": "R18",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    },
+    {
+      "roofId": "R19",
+      "label": "R19",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    },
+    {
+      "roofId": "R20",
+      "label": "R20",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    },
+    {
+      "roofId": "R21",
+      "label": "R21",
+      "status": "unassigned",
+      "reason": "Tidak memiliki kode gedung yang dapat dipastikan dari sumber saat ini.",
+      "decision": "Pertahankan sebagai objek tanpa kode; jangan memasangkan dengan gedung lain hanya berdasarkan kedekatan.",
+      "overlap": null
+    }
+  ],
+  "legacyOnly": [
+    {
+      "id": "A1",
+      "decision": "Pertahankan pos satpam terbuka tanpa pintu pada denah lama; atapnya belum teridentifikasi pasti pada penelusuran baru."
+    }
+  ]
+}

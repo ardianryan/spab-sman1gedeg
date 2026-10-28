@@ -21,6 +21,8 @@ import { Map2D } from "./Map2D";
 import { LocationMap } from "./LocationMap";
 const Map3D = lazy(() => import("./Map3D"));
 const exportsList = [
+  ["Perbandingan denah lama dan baru", "denah-atap-perbandingan.pdf", "PDF · penyelarasan visual"],
+  ["Keputusan penyelarasan", "penyelarasan-denah.md", "Markdown · penilaian per gedung"],
   ["Draf denah atap", "denah-atap.pdf", "PDF · penelusuran atap"],
   ["Atap dan citra satelit", "denah-atap-satelit.pdf", "PDF · pembanding"],
   ["Prapemetaan citra", "prapemetaan.pdf", "PDF · pencocokan sementara"],

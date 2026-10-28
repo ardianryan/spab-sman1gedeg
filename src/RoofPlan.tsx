@@ -1,12 +1,12 @@
 import { useState } from "react";
 import data from "../data/roof-plan.json";
-import { campus } from "./model";
-import { composeAffine, invertAffine, project, registration, registrationFit, type XY } from "./registration";
+import comparison from "../data/plan-comparison.json";
+import { correspondingFootprints, oldFootprints, overlapFor } from "./planComparison";
+import { invertAffine, project, registration, registrationFit, type XY } from "./registration";
 
 export const roofPlan = data;
 export type RoofBase = "clean" | "aerial" | "satellite";
 const aerialFit = registrationFit("aerial");
-const campusToAerial = composeAffine(invertAffine(aerialFit.matrix), registrationFit("campus").matrix);
 const point = (p: number[], base: RoofBase): XY => base === "satellite" ? project(p as XY, aerialFit.matrix) : p as XY;
 const shape = (points: number[][], base: RoofBase) => points.map((p) => point(p, base).join(",")).join(" ");
 export const roofViewBox = (base: RoofBase) => base === "satellite" ? [0, 0, 669, 812] : [0, 0, 768, 1240];
@@ -42,7 +42,9 @@ export function RoofArtwork({ base = "clean", opacity = .7, labels = true, groun
       {labels && label(r.labelPosition, r.label, r.label.length > 7 ? 15 : 24)}
     </g>)}
     {oldPlan && <g data-old-roofs="true" fill="none" stroke="#185c83" strokeWidth="2" strokeDasharray="7 5" pointerEvents="none">
-      {campus.buildings.map((b) => <polygon key={b.id} points={shape(b.polygon.map((p) => project(p as XY, campusToAerial)), base)} />)}
+      {oldFootprints.map((b) => <polygon key={b.id} data-old-building={b.id} points={shape(b.polygon, base)}
+        opacity={!selected || correspondingFootprints(selected).some((p) => p.id === b.id) ? 1 : .2}
+        strokeWidth={selected && correspondingFootprints(selected).some((p) => p.id === b.id) ? 3.5 : 2} />)}
     </g>}
     <RoofCompass satellite={base === "satellite"} />
   </>;
@@ -75,6 +77,8 @@ export function RoofPlanPanel() {
   const [selected, setSelected] = useState<string | null>(null);
   const [zoom, setZoom] = useState(1);
   const roof = roofPlan.roofs.find((r) => r.id === selected);
+  const review = comparison.entries.find((entry) => entry.roofId === selected);
+  const overlap = selected ? overlapFor(selected) : null;
   return <section className="registration-panel roof-panel" aria-label="Draf denah hasil penelusuran atap">
     <div className="registration-controls">
       <h2>Denah hasil penelusuran atap</h2>
@@ -96,10 +100,16 @@ export function RoofPlanPanel() {
         {roofPlan.roofs.map((r) => <option key={r.id} value={r.id}>{r.label} · {r.id}</option>)}
       </select>
       <div role="status">{roof ? <><strong>{roof.label} · {roof.id}</strong><p>{roof.mappingStatus === "unassigned" ? "Kode gedung belum ditetapkan. ID ini hanya menandai objek penelusuran." : "Kode dipasangkan sementara berdasarkan posisi pada denah lama."} {roof.note}</p></> : <p>{roofPlan.roofs.length} bidang atap ditelusuri. Pilih bidang untuk melihat statusnya.</p>}</div>
+      {review && <div className="roof-review" aria-live="polite">
+        <h3>Keputusan penyelarasan</h3>
+        <p><strong>{review.reason}</strong></p><p>{review.decision}</p>
+        {overlap && <p className="small">Sekitar {overlap.oldCoveragePercent}% area tapak lama tertutup bidang atap baru setelah pencocokan citra. Angka ini bukan tingkat kepastian identitas atau akurasi GPS.</p>}
+      </div>}
       <p className="small">Atap A1 belum teridentifikasi pasti. D–E dan F–UKS tetap digabung pada bidang atapnya. Pintu dan jalur belum dipindahkan ke draf ini.</p>
       <a href="./exports/denah-atap.svg" download>Unduh denah atap · SVG</a>
       <a href="./exports/denah-atap.pdf" download>Unduh denah atap · PDF</a>
       <a href="./exports/denah-atap-data.json" download>Unduh data penelusuran · JSON</a>
+      <a href="./exports/penyelarasan-denah.md" download>Unduh keputusan penyelarasan</a>
     </div>
     <div className="roof-preview">
       <div className="roof-toolbar" role="group" aria-label="Pembesaran denah atap">
@@ -116,5 +126,25 @@ export function RoofPlanPanel() {
       <p className="small">{base === "satellite" ? `Google Maps · tangkapan layar pengguna. Selisih pencocokan gambar udara: ${aerialFit.rmse.toFixed(1)} piksel citra; bukan akurasi GPS.` : "Koordinat piksel gambar udara. Ukuran, batas lahan, dan orientasi geografis belum diukur."}</p>
       <p className="small">Terakota: atap dengan kode sementara. Abu-abu: atap yang belum memiliki kode. Hijau: lapangan dan taman.</p>
     </div>
+    <section className="roof-reconciliation" aria-labelledby="reconciliation-heading">
+      <h2 id="reconciliation-heading">Hasil perbandingan denah lama dan baru</h2>
+      <p>{comparison.decision}</p>
+      <ul>
+        <li><strong>Paling dekat secara relatif: B, J, L, M.</strong> Bentuk atap baru layak menjadi acuan visual sementara.</li>
+        <li><strong>Cukup sesuai: C, N, O utama.</strong> Identitas tetap; tepi dan ukurannya perlu ditinjau.</li>
+        <li><strong>Perlu penempatan ulang: A, I, K.</strong> Posisi relatif cocok, tetapi garis lama bergeser dari atap baru.</li>
+        <li><strong>Batas ruang tetap mengikuti data lama: D–E, F–UKS, G–H.</strong> Bentuk atap tidak menentukan pembagian ruang.</li>
+        <li><strong>Belum disatukan: O terpisah, A1, R16–R21.</strong> Calon pasangan O terpisah berbeda posisi; objek lainnya belum pasti.</li>
+      </ul>
+      <p className="small">{comparison.method} {comparison.limitations[0]}</p>
+      <details><summary>Lihat keputusan per bidang atap</summary>
+        <table><thead><tr><th>Objek</th><th>Penilaian visual</th><th>Keputusan</th></tr></thead>
+          <tbody>{comparison.entries.map((entry) => <tr key={entry.roofId}>
+            <td><button aria-pressed={selected === entry.roofId} onClick={() => { setSelected(entry.roofId); setOldPlan(true); }}>{entry.label} · {entry.roofId}</button></td>
+            <td>{entry.reason}</td><td>{entry.decision}</td>
+          </tr>)}</tbody>
+        </table>
+      </details>
+    </section>
   </section>;
 }

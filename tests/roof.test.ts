@@ -30,3 +30,13 @@ test("penelusuran atap mempertahankan bidang gabungan dan menghasilkan proyeksi 
     assert.ok(project(p as XY, fit.matrix).every(Number.isFinite));
   }
 });
+
+test("pasangan O terpisah tidak tercampur dengan O utama dan konflik dipertahankan", async () => {
+  const { correspondingFootprints, overlapFor } = await import("../src/planComparison");
+  assert.deepEqual(correspondingFootprints("R15").map((p) => p.id), ["O-ANNEX"]);
+  assert.deepEqual(correspondingFootprints("R14").map((p) => p.id), ["O"]);
+  assert.deepEqual(correspondingFootprints("R04").map((p) => p.id), ["D", "E"]);
+  assert.equal(overlapFor("R15")?.oldCoveragePercent, 0);
+  assert.equal(overlapFor("R18"), null);
+  assert.ok((overlapFor("R11")?.oldCoveragePercent ?? 0) >= 95);
+});

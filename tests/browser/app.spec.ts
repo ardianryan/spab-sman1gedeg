@@ -329,7 +329,7 @@ for (const width of [360, 1440]) test(`draf atap dapat dibandingkan dan dipilih 
   await page.getByLabel("Latar pembanding").selectOption("satellite");
   await expect(page.locator(".roof-map image")).toHaveAttribute("href", "./reference/google-maps-satelit.png");
   await page.getByLabel("Bandingkan batas denah lama").check();
-  await expect(page.locator("[data-old-roofs] polygon")).toHaveCount(16);
+  await expect(page.locator("[data-old-roofs] polygon")).toHaveCount(17);
   await page.getByRole("button", { name: "Perbesar atap", exact: true }).click();
   await expect(page.locator(".roof-toolbar")).toContainText("150%");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -337,4 +337,19 @@ for (const width of [360, 1440]) test(`draf atap dapat dibandingkan dan dipilih 
   await page.getByLabel("Latar pembanding").selectOption("aerial");
   await expect(page.locator(".roof-map image")).toHaveAttribute("href", "./reference/udara-referensi.png");
   await page.screenshot({ path: `artifacts/roof-${width}.png`, fullPage: true });
+});
+
+test("pemilihan atap menyinkronkan pasangan lama dan keputusan konflik", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Prapemetaan citra", exact: true }).click();
+  await page.getByRole("button", { name: "Draf denah atap", exact: true }).click();
+  await page.getByLabel("Bandingkan batas denah lama").check();
+  await page.getByLabel("Pilih atap untuk ditinjau").selectOption("R15");
+  await expect(page.locator(".roof-review")).toContainText("Tunda penyatuan");
+  await expect(page.locator('[data-old-building="O-ANNEX"]')).toHaveAttribute("opacity", "1");
+  await expect(page.locator('[data-old-building="O"]')).toHaveAttribute("opacity", "0.2");
+  await page.getByLabel("Pilih atap untuk ditinjau").selectOption("R04");
+  await expect(page.locator('[data-old-building="D"]')).toHaveAttribute("opacity", "1");
+  await expect(page.locator('[data-old-building="E"]')).toHaveAttribute("opacity", "1");
+  await expect(page.locator(".roof-review")).toContainText("dua identitas");
 });

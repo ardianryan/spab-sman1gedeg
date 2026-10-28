@@ -4,24 +4,27 @@ import { readFile, writeFile } from "node:fs/promises";
 import { RoofArtwork, roofPlan, roofViewBox, type RoofBase } from "../src/RoofPlan";
 import { registrationFit, project, type XY } from "../src/registration";
 import { launchBrowser } from "./browser";
+import comparison from "../data/plan-comparison.json";
+import { overlapFor } from "../src/planComparison";
 
 const browser = await launchBrowser();
 try {
-  for (const base of ["clean", "satellite"] as RoofBase[]) {
-    const name = base === "clean" ? "denah-atap" : "denah-atap-satelit";
+  for (const variant of ["clean", "satellite", "comparison"] as const) {
+    const base: RoofBase = variant === "satellite" ? "satellite" : "clean";
+    const name = variant === "comparison" ? "denah-atap-perbandingan" : base === "clean" ? "denah-atap" : "denah-atap-satelit";
     let svg = renderToStaticMarkup(<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="1684" viewBox="0 0 1191 1684" fontFamily="Arial, sans-serif">
       <rect width="1191" height="1684" fill="#faf9f5" />
       <image href="./brand/logo-sman-1-gedeg.png" x="55" y="35" width="74" height="74" />
       <g fill="#183f35">
         <text x="150" y="65" fontSize="30" fontWeight="700">Denah hasil penelusuran atap</text>
-        <text x="150" y="96" fontSize="20">SMA Negeri 1 Gedeg · {base === "clean" ? "draf denah baru" : "pencocokan citra satelit"}</text>
+        <text x="150" y="96" fontSize="20">SMA Negeri 1 Gedeg · {variant === "comparison" ? "penyelarasan denah lama dan baru" : base === "clean" ? "draf denah baru" : "pencocokan citra satelit"}</text>
         <text x="55" y="145" fontSize="20" fontWeight="700">DRAF — BELUM DIVERIFIKASI UNTUK PENGGUNAAN OPERASIONAL</text>
       </g>
       <svg x="55" y="175" width="1081" height="1310" viewBox={roofViewBox(base).join(" ")}>
-        <RoofArtwork base={base} opacity={.65} />
+        <RoofArtwork base={base} opacity={.65} oldPlan={variant === "comparison"} />
       </svg>
       <g fill="#183f35" fontSize="17">
-        <text x="55" y="1520">Terakota: kode sementara · Abu-abu: kode belum diketahui · Hijau: lapangan/taman</text>
+        <text x="55" y="1520">{variant === "comparison" ? "Bidang terakota/abu-abu: atap baru · Garis biru putus-putus: tapak denah lama" : "Terakota: kode sementara · Abu-abu: kode belum diketahui · Hijau: lapangan/taman"}</text>
         <text x="55" y="1550">Batas atap bukan batas dinding. Pintu dan jalur belum dipindahkan ke denah baru.</text>
         <text x="55" y="1580">Asal gambar udara belum terverifikasi. Citra pembanding: Google Maps dari pengguna.</text>
         <text x="55" y="1610">R16–R21 adalah ID penelusuran. A1 belum teridentifikasi pasti. Tanpa skala ukur.</text>
@@ -46,3 +49,14 @@ await writeFile("public/exports/denah-atap-data.json", JSON.stringify({
   satelliteRoofs: roofPlan.roofs.map((r) => ({ id: r.id, polygon: r.polygon.map((p) => project(p as XY, fit.matrix)) })),
 }, null, 2) + "\n");
 console.log("Denah atap bersih dan satelit diekspor ke SVG, PNG, PDF, serta JSON.");
+const entries = comparison.entries.map((entry) => ({ ...entry, overlap: overlapFor(entry.roofId) }));
+await writeFile("public/exports/penyelarasan-denah.json", JSON.stringify({ ...comparison, entries }, null, 2) + "\n");
+const report = [
+  "# Keputusan penyelarasan denah SMA Negeri 1 Gedeg", "", `Tanggal: ${comparison.date} · DRAF`, "",
+  comparison.decision, "", comparison.method, "", ...comparison.limitations.map((text) => `- ${text}`), "",
+  "| Objek | Penilaian | Keputusan | Tapak lama tertutup atap baru |", "|---|---|---|---|",
+  ...entries.map((entry) => `| ${entry.label} (${entry.roofId}) | ${entry.reason} | ${entry.decision} | ${entry.overlap ? entry.overlap.oldCoveragePercent + "%" : "Tidak ada pasangan"} |`),
+  "", ...comparison.legacyOnly.map((entry) => `${entry.id}: ${entry.decision}`), "",
+  "Angka tumpang tindih dihitung dengan pengambilan sampel setiap 2 piksel pada gambar udara. Nilai ini membandingkan tapak lama dengan atap, bukan ketelitian lapangan atau kepastian identitas. Koordinat GPS tidak digunakan.", "",
+];
+await writeFile("public/exports/penyelarasan-denah.md", report.join("\n"));

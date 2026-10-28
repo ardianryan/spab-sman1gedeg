@@ -48,3 +48,11 @@ Dua taman di bagian atas lapangan upacara ditambahkan sebagai penghalang berdasa
 - KU/K1/K2, dua taman, dan jalan bagian utara ditampilkan sebagai konteks visual. Batas ini bukan hasil survei atau penetapan kapasitas.
 - Pencocokan ke citra satelit memakai transformasi enam pasangan visual yang sudah tersedia. Koordinat GPS tambahan tidak dipakai untuk mengesahkan bentuk atap.
 - Ekspor `denah-atap.*`, `denah-atap-satelit.*`, dan `denah-atap-data.json` tersedia. Jalankan `npm run export:roof` setelah mengubah poligon.
+
+## Penyelarasan visual — 29 Oktober 2026
+
+- Menambahkan keputusan per bidang dalam `data/plan-comparison.json` dan perhitungan tumpang tindih tapak lama terhadap atap baru di `src/planComparison.ts`.
+- Pasangan bangunan disinkronkan saat memilih atap. Tapak O-ANNEX kini ikut ditampilkan sebagai objek terpisah, bukan disamakan dengan O utama.
+- B/J/L/M paling dekat secara relatif; C/N/O utama cukup sesuai; A/I/K memerlukan penempatan ulang visual. D–E, F–UKS, dan G–H mempertahankan identitas serta detail akses lama.
+- R15 diberi label O? karena tidak bertumpang tindih dengan calon pasangan O terpisah. A1 dan atap tanpa kode tidak dipasangkan secara otomatis.
+- Menambahkan ekspor perbandingan SVG/PNG/PDF serta laporan keputusan Markdown/JSON. Nilai tumpang tindih adalah ukuran visual dalam piksel, bukan tingkat kepastian atau hasil survei. GPS tidak digunakan untuk keputusan ini.

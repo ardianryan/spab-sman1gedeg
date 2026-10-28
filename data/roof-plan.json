@@ -1,6 +1,6 @@
 {
   "version": "0.1.0-draft",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "status": "draft",
   "method": "manual-roof-edge-tracing",
   "coordinateSystem": "Piksel gambar udara referensi, 768 × 1376; bukan batas dinding atau hasil survei",
@@ -471,7 +471,7 @@
       "buildingCodes": [
         "O"
       ],
-      "label": "O · terpisah",
+      "label": "O? · terpisah",
       "polygon": [
         [
           352,
@@ -495,7 +495,7 @@
         984
       ],
       "mappingStatus": "provisional",
-      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+      "note": "Calon pasangan O terpisah; tapak lama dan atap baru tidak bertumpang tindih setelah pencocokan. Identitas belum diputuskan."
     },
     {
       "id": "R16",
