@@ -20,6 +20,31 @@ export function toMeters(latitude: number, longitude: number): XY {
 export function fromMeters(east: number, north: number): [number, number] {
   return [origin[0] + north / northMeters, origin[1] + east / eastMeters];
 }
+// Three provisional pairs support a review overlay, not an independently checked GPS calibration.
+export function geographicPreview() {
+  const matched = registration.geographicControlPoints.filter(
+    (p) => p.status === "provisional-image-match" && p.campus !== null,
+  );
+  const points: GeoPoint[] = [anchor, ...matched.map((p) => ({
+    id: p.id, label: p.feature, latitude: p.latitude, longitude: p.longitude,
+    campus: p.campus as XY,
+  }))];
+  if (points.length < 3) return null;
+  try {
+    const matrix = fitAffine(points.map((p) => ({
+      from: toMeters(p.latitude, p.longitude), to: p.campus,
+    })));
+    return {
+      matrix,
+      points,
+      predictions: registration.geographicControlPoints
+        .filter((p) => p.campus === null)
+        .map((p) => ({ ...p, projectedCampus: project(toMeters(p.latitude, p.longitude), matrix) })),
+    };
+  } catch {
+    return null;
+  }
+}
 export function initialGeoPoints(): GeoPoint[] {
   try {
     const parsed = JSON.parse(localStorage.getItem(key) ?? "[]");

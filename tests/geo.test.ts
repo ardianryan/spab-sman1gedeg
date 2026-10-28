@@ -1,7 +1,16 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { accuracyOutline, calibration, locateOnCampus, fromMeters, type GeoPoint } from "../src/geo";
+import { accuracyOutline, calibration, locateOnCampus, fromMeters, geographicPreview, type GeoPoint } from "../src/geo";
 import { approximateCardinalDirections } from "../src/registration";
+
+test("pratinjau tiga patokan tidak mengesahkan GPS atau memakai sudut yang belum pasti sebagai masukan", () => {
+  const preview = geographicPreview();
+  assert.ok(preview);
+  assert.equal(preview.points.length, 3);
+  assert.equal(calibration(preview.points), null);
+  assert.deepEqual(preview.predictions.map((p) => p.id), ["GEO-BASKET-CORNER", "GEO-EAST-ROOF"]);
+  assert.ok(preview.predictions.every((p) => p.projectedCampus.every(Number.isFinite)));
+});
 
 test("empat arah mata angin mengikuti pencocokan citra tanpa membalik timur dan barat", () => {
   const { U, T, S, B } = approximateCardinalDirections();

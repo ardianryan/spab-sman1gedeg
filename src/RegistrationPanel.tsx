@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { campus, pointsString } from "./model";
+import { geographicPreview } from "./geo";
 import {
   registration,
   registrationFit,
@@ -10,10 +11,12 @@ export function RegistrationArtwork({
   opacity = 0.5,
   overlay = "campus",
   showPoints = true,
+  showGeographicPreview = false,
 }: {
   opacity?: number;
   overlay?: "campus" | "aerial";
   showPoints?: boolean;
+  showGeographicPreview?: boolean;
 }) {
   const fit = registrationFit(overlay),
     denah = registrationFit("campus");
@@ -112,6 +115,14 @@ export function RegistrationArtwork({
           perkiraan
         </title>
       </g>
+      {showGeographicPreview && geographicPreview()?.predictions.map((p, i) => {
+        const [x, y] = project(p.projectedCampus, denah.matrix);
+        return <g key={p.id} transform={`translate(${x} ${y})`}>
+          <circle r="12" fill="white" fillOpacity=".8" stroke="#8a3c16" strokeWidth="2" strokeDasharray="3 2" />
+          <text textAnchor="middle" dominantBaseline="central" fontSize="13" fill="#64290d" fontWeight="700">{i + 1}</text>
+          <title>{p.feature}: posisi hasil proyeksi sementara, belum dikonfirmasi</title>
+        </g>;
+      })}
       <rect x="0" y="779" width="669" height="33" fill="#172d27" />
       <text x="12" y="800" fill="white" fontSize="12">
         Google Maps · tangkapan layar pengguna · prapemetaan, bukan hasil survei
@@ -123,6 +134,8 @@ export function RegistrationPanel() {
   const [overlay, setOverlay] = useState<"campus" | "aerial">("campus"),
     [opacity, setOpacity] = useState(0.65),
     [points, setPoints] = useState(true);
+  const [preview, setPreview] = useState(false);
+  const geographic = geographicPreview();
   const fit = registrationFit(overlay);
   return (
     <section className="registration-panel" aria-label="Prapemetaan citra">
@@ -182,6 +195,13 @@ export function RegistrationPanel() {
           geografis belum dikalibrasi; pintu ditandai secara visual tanpa
           koordinat geografis, sesuai arahan pengguna.
         </p>
+        {geographic && <div>
+          <h3>Pratinjau geografis</h3>
+          <p>{geographic.points.length} pasangan sementara: tengah lapangan upacara, gerbang kiri A1, dan bagian kiri bawah N.</p>
+          <label><input type="checkbox" checked={preview} onChange={(e) => setPreview(e.target.checked)} /> Tampilkan proyeksi sudut yang belum pasti</label>
+          <ol>{geographic.predictions.map((p) => <li key={p.id}>{p.feature}</li>)}</ol>
+          <p className="small">Lingkaran putus-putus adalah perkiraan dari transformasi, bukan titik yang sudah dicocokkan. Tiga pasangan tidak memberi pengujian akurasi independen. Penanda GPS tetap menunggu kalibrasi yang lengkap.</p>
+        </div>}
       </div>
       <div>
         <svg
@@ -193,6 +213,7 @@ export function RegistrationPanel() {
             opacity={opacity}
             overlay={overlay}
             showPoints={points}
+            showGeographicPreview={preview}
           />
         </svg>
         <table>
@@ -214,6 +235,21 @@ export function RegistrationPanel() {
             ))}
           </tbody>
         </table>
+        <table>
+          <caption>Koordinat acuan dari pengguna</caption>
+          <thead><tr><th>Patokan</th><th>Koordinat</th><th>Status pencocokan</th></tr></thead>
+          <tbody>
+            <tr><td>Tengah lapangan upacara</td><td>{registration.anchor.latitude}, {registration.anchor.longitude}</td><td>Posisi gambar perkiraan</td></tr>
+            {registration.geographicControlPoints.map((point) => (
+              <tr key={point.id}>
+                <td>{point.feature}</td>
+                <td>{point.latitude}, {point.longitude}</td>
+                <td>{point.status === "pending-corner-confirmation" ? "Menunggu kepastian sudut pada gambar" : point.status === "provisional-image-match" ? "Pencocokan gambar sementara; belum dipakai untuk GPS" : "Menunggu pencocokan pada gambar"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <p className="small">{registration.geographicControlPoints.length + 1} koordinat telah diterima. Koordinat tambahan belum digunakan untuk penanda GPS sampai patokan yang sama dipastikan pada gambar.</p>
       </div>
     </section>
   );

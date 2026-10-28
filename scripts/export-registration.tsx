@@ -5,6 +5,7 @@ import { RegistrationArtwork } from "../src/RegistrationPanel";
 import { registration, registrationFit } from "../src/registration";
 import { campus } from "../src/model";
 import { launchBrowser } from "./browser";
+import { geographicPreview } from "../src/geo";
 const fit = registrationFit("campus");
 let svg = renderToStaticMarkup(
   <svg
@@ -56,7 +57,7 @@ let svg = renderToStaticMarkup(
         Google Maps: tangkapan layar pengguna; tanggal citra tidak diketahui.
       </text>
       <text x="65" y="1590" fontSize="17">
-        Versi {campus.meta.version} · {campus.meta.date} · Draf pencocokan,
+        Versi {campus.meta.version} · {registration.date} · Draf pencocokan,
         bukan survei
       </text>
     </g>
@@ -98,6 +99,11 @@ await writeFile(
   JSON.stringify(
     {
       ...registration,
+      geographicPreview: {
+        ...geographicPreview(),
+        status: "provisional-not-for-gps",
+        independentlyValidated: false,
+      },
       fits: {
         campus: registrationFit("campus"),
         aerial: registrationFit("aerial"),

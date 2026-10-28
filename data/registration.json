@@ -1,7 +1,7 @@
 {
   "version": "0.2.0-draft",
   "status": "pre-registration",
-  "date": "2026-10-20",
+  "date": "2026-10-28",
   "method": "affine-least-squares",
   "coordinateReference": "WGS84 latitude/longitude supplied by user",
   "anchor": {
@@ -129,8 +129,79 @@
   "limitations": [
     "Titik pencocokan dipilih manual pada sudut atap dan area lapangan, belum hasil survei.",
     "Selisih diukur dalam piksel tangkapan layar; bukan galat meter dan bukan akurasi geografis.",
-    "Satu koordinat acuan tidak menentukan rotasi, skala meter, atau koordinat pintu.",
+    "Lima koordinat tersedia; tiga patokan memiliki pasangan denah sementara. Dua sudut belum dipastikan. Pratinjau tiga titik tidak menyediakan pengujian akurasi independen.",
     "Transformasi hanya untuk prapemetaan visual; tidak mengganti denah operasional.",
     "Batas gelap yang digambar pengguna bukan batas kadastral terverifikasi."
+  ],
+  "geographicControlPoints": [
+    {
+      "id": "GEO-GATE-LEFT",
+      "feature": "Gerbang kiri, tepat di sebelah A1",
+      "latitude": -7.454246327838755,
+      "longitude": 112.39853732334511,
+      "source": "Koordinat Google Maps yang diberikan pengguna",
+      "recordedAt": "2026-10-28",
+      "status": "provisional-image-match",
+      "campus": [
+        619,
+        285
+      ],
+      "aerial": null,
+      "satellite": null,
+      "note": "Posisi denah mengikuti simpul gate-left pada data kampus. Posisi pada citra belum dipilih secara independen; digunakan untuk pratinjau geografis saja."
+    },
+    {
+      "id": "GEO-BASKET-CORNER",
+      "feature": "Sudut lapangan basket",
+      "latitude": -7.455461791465383,
+      "longitude": 112.3981160723484,
+      "source": "Koordinat Google Maps yang diberikan pengguna",
+      "recordedAt": "2026-10-28",
+      "status": "pending-corner-confirmation",
+      "campus": null,
+      "aerial": null,
+      "satellite": null,
+      "note": "Menunggu konfirmasi sudut kiri/kanan dan atas/bawah pada gambar."
+    },
+    {
+      "id": "GEO-EAST-ROOF",
+      "feature": "Sudut gedung paling timur dengan atap paling lebar",
+      "latitude": -7.454113446071915,
+      "longitude": 112.39930529288335,
+      "source": "Koordinat Google Maps yang diberikan pengguna",
+      "recordedAt": "2026-10-28",
+      "status": "pending-corner-confirmation",
+      "campus": null,
+      "aerial": null,
+      "satellite": null,
+      "note": "Menunggu konfirmasi sudut atap pada gambar. Bukan otomatis sudut gedung L."
+    },
+    {
+      "id": "GEO-N-LOWER-LEFT",
+      "feature": "Bagian kiri bawah gedung N, mengacu pada pin gambar kedua",
+      "latitude": -7.455476,
+      "longitude": 112.39796,
+      "source": "Koordinat dan dua tangkapan layar yang diberikan pengguna",
+      "recordedAt": "2026-10-28",
+      "status": "provisional-image-match",
+      "campus": [
+        357,
+        1004
+      ],
+      "aerial": [
+        54,
+        1201
+      ],
+      "satellite": [
+        103,
+        612
+      ],
+      "visualControlPointId": "CP3",
+      "note": "Dicocokkan sementara dengan sudut bawah kiri N (CP3). Pin pada citra bukan hasil pengukuran sudut bangunan; periksa kecocokan sebelum dipakai dalam kalibrasi GPS. Tidak menggantikan koordinat sudut lapangan basket sebelumnya.",
+      "evidence": [
+        "./reference/koordinat-n-konteks.png",
+        "./reference/koordinat-n-detail.png"
+      ]
+    }
   ]
 }

@@ -31,3 +31,11 @@ Tambahan pengguna: pintu ruang tengah B di ujung kiri dilengkapi (B1-D03). L dib
 Koreksi terakhir K menggantikan keterangan sisi kanan. ID pintu tetap K1-D01–K1-D03; yang berubah adalah posisi visual dan sumber koreksi.
 
 Dua taman di bagian atas lapangan upacara ditambahkan sebagai penghalang berdasarkan gambar udara dan anotasi pengguna. Jejak T5 berhenti sebelum taman barat; ujung lama tersimpan pada arsip. K1/K2 tetap terlihat pada kondisi normal sebagai titik sementara/alternatif, dengan penekanan berubah menurut kondisi simulasi. Angin kencang tetap tidak menawarkan tujuan lapangan.
+
+## Prapemetaan geografis — 28 Oktober 2026
+
+- Empat koordinat tambahan disimpan bersama koordinat tengah lapangan upacara, berikut sumber dan status pencocokannya.
+- Gerbang kiri A1 dipasangkan sementara dengan simpul denah yang sudah ada. Pin N dipasangkan sementara dengan CP3; dua tangkapan layar pengguna disimpan sebagai bukti.
+- Transformasi geografis awal memakai tiga pasangan untuk peninjauan saja. Sudut basket dan gedung timur diproyeksikan sebagai lingkaran putus-putus opsional pada tab Prapemetaan citra, bukan dijadikan masukan kalibrasi yang telah dikonfirmasi.
+- Transformasi tiga titik tidak memiliki titik uji independen. Kalibrasi GPS tetap mensyaratkan sedikitnya empat pasangan; koordinat yang sudutnya belum pasti tidak dimasukkan secara otomatis.
+- Data transformasi hasil ekspor menyertakan pratinjau geografis beserta status `provisional-not-for-gps`.

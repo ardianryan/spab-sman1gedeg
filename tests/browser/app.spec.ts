@@ -1,4 +1,13 @@
 import { test, expect } from "@playwright/test";
+test("pratinjau geografis menampilkan sudut perkiraan tanpa mengaktifkan GPS", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "Prapemetaan citra", exact: true }).click();
+  await expect(page.getByText("5 koordinat telah diterima.", { exact: false })).toBeVisible();
+  await page.getByLabel("Tampilkan proyeksi sudut yang belum pasti").check();
+  await expect(page.locator('.registration-map circle[stroke-dasharray="3 2"]')).toHaveCount(2);
+  await page.getByLabel("Tampilkan proyeksi sudut yang belum pasti").uncheck();
+  await expect(page.locator('.registration-map circle[stroke-dasharray="3 2"]')).toHaveCount(0);
+});
 for (const width of [360, 768, 1440])
   test(`peta dan kontrol pada lebar ${width}`, async ({ page }) => {
     await page.setViewportSize({ width, height: 1000 });
