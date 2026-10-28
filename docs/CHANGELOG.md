@@ -39,3 +39,12 @@ Dua taman di bagian atas lapangan upacara ditambahkan sebagai penghalang berdasa
 - Transformasi geografis awal memakai tiga pasangan untuk peninjauan saja. Sudut basket dan gedung timur diproyeksikan sebagai lingkaran putus-putus opsional pada tab Prapemetaan citra, bukan dijadikan masukan kalibrasi yang telah dikonfirmasi.
 - Transformasi tiga titik tidak memiliki titik uji independen. Kalibrasi GPS tetap mensyaratkan sedikitnya empat pasangan; koordinat yang sudutnya belum pasti tidak dimasukkan secara otomatis.
 - Data transformasi hasil ekspor menyertakan pratinjau geografis beserta status `provisional-not-for-gps`.
+
+## Draf denah atap — 28 Oktober 2026
+
+- Menambahkan 21 poligon atap yang ditelusuri manual dari gambar udara pada `data/roof-plan.json`, terpisah dari denah utama.
+- Menyediakan latar denah bersih, gambar udara, dan citra satelit; label, pembesaran, pemilihan atap, serta garis pembanding denah lama.
+- Atap gabungan D–E dan F–UKS tidak dipecah menjadi ruang rekaan. A1 belum diidentifikasi pasti; ID R16–R21 tidak dianggap kode gedung resmi. Atap yang terpotong di batas bawah gambar belum ditelusuri.
+- KU/K1/K2, dua taman, dan jalan bagian utara ditampilkan sebagai konteks visual. Batas ini bukan hasil survei atau penetapan kapasitas.
+- Pencocokan ke citra satelit memakai transformasi enam pasangan visual yang sudah tersedia. Koordinat GPS tambahan tidak dipakai untuk mengesahkan bentuk atap.
+- Ekspor `denah-atap.*`, `denah-atap-satelit.*`, dan `denah-atap-data.json` tersedia. Jalankan `npm run export:roof` setelah mengubah poligon.

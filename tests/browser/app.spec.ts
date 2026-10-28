@@ -317,3 +317,24 @@ test("K1 K2 tetap terlihat saat normal dan taman memiliki lapisan tersendiri", a
   await page.getByLabel("Taman / penghalang", { exact: true }).uncheck();
   await expect(page.locator("[data-obstacle]")).toHaveCount(0);
 });
+
+for (const width of [360, 1440]) test(`draf atap dapat dibandingkan dan dipilih pada lebar ${width}`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 900 });
+  await page.goto("/");
+  await page.getByRole("button", { name: "Prapemetaan citra", exact: true }).click();
+  await page.getByRole("button", { name: "Draf denah atap", exact: true }).click();
+  await expect(page.locator("[data-roof]")).toHaveCount(21);
+  await page.getByLabel("Pilih atap untuk ditinjau").selectOption("R06");
+  await expect(page.getByRole("button", { name: "Atap G", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await page.getByLabel("Latar pembanding").selectOption("satellite");
+  await expect(page.locator(".roof-map image")).toHaveAttribute("href", "./reference/google-maps-satelit.png");
+  await page.getByLabel("Bandingkan batas denah lama").check();
+  await expect(page.locator("[data-old-roofs] polygon")).toHaveCount(16);
+  await page.getByRole("button", { name: "Perbesar atap", exact: true }).click();
+  await expect(page.locator(".roof-toolbar")).toContainText("150%");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.getByRole("button", { name: "Reset atap", exact: true }).click();
+  await page.getByLabel("Latar pembanding").selectOption("aerial");
+  await expect(page.locator(".roof-map image")).toHaveAttribute("href", "./reference/udara-referensi.png");
+  await page.screenshot({ path: `artifacts/roof-${width}.png`, fullPage: true });
+});

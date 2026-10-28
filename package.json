@@ -14,7 +14,8 @@
     "export:print": "tsx scripts/export-print.tsx",
     "export:video": "tsx scripts/export-video.ts",
     "export:verify": "tsx scripts/verify-exports.ts",
-    "export:registration": "tsx scripts/export-registration.tsx"
+    "export:registration": "tsx scripts/export-registration.tsx",
+    "export:roof": "tsx scripts/export-roof.tsx"
   },
   "dependencies": {
     "@fontsource-variable/public-sans": "^5.3.0",

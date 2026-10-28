@@ -1346,6 +1346,19 @@ dialog a {
   gap: 16px;
   align-items: stretch;
 }
+.registration-tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.registration-tabs button[aria-pressed="true"] { background: var(--green); color: white; border-color: var(--green); }
+.roof-preview { min-width: 0; }
+.roof-toolbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.roof-toolbar button { font-size: 12px; }
+.roof-toolbar span { font-size: 12px; color: var(--muted); }
+.roof-scroll { height: min(75vh, 850px); overflow: auto; border: 1px solid var(--line); background: var(--paper); scrollbar-width: thin; }
+.roof-map { display: block; height: auto; }
+.roof-pick { cursor: pointer; }
+.roof-pick:focus-visible { outline: none; }
+.roof-pick:focus-visible polygon, .roof-pick:hover polygon { stroke: #173e33; stroke-width: 4; }
+.roof-scroll:focus-visible { outline: 3px solid #a4582b; outline-offset: 3px; }
+.registration-panel td { overflow-wrap: anywhere; }
 .registration-controls p {
   font-size: 14px;
   line-height: 1.6;
@@ -1353,6 +1366,7 @@ dialog a {
 .registration-controls input[type="range"] {
   width: 100%;
 }
+.registration-controls select { min-height: 44px; width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 5px; background: #fffefa; color: var(--green); }
 .registration-map {
   width: 100%;
   max-height: 850px;

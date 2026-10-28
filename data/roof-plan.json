@@ -1,0 +1,847 @@
+{
+  "version": "0.1.0-draft",
+  "date": "2026-10-28",
+  "status": "draft",
+  "method": "manual-roof-edge-tracing",
+  "coordinateSystem": "Piksel gambar udara referensi, 768 × 1376; bukan batas dinding atau hasil survei",
+  "source": "./reference/udara-referensi.png",
+  "registrationSource": "data/registration.json",
+  "notes": [
+    "Asal gambar udara belum terverifikasi sebagai foto drone asli.",
+    "Poligon menelusuri tepi atap secara manual; bukan hasil pemindaian otomatis.",
+    "Kode gedung dicocokkan sementara dengan denah lama. R16–R21 merupakan ID penelusuran, bukan kode gedung resmi.",
+    "Atap D–E dan F–UKS tidak digunakan untuk menebak pembagian ruang.",
+    "Atap A1 belum dapat diidentifikasi dengan pasti. Gedung di tepi bawah gambar yang terpotong tidak ditelusuri.",
+    "Pintu, tangga, dan jalur evakuasi belum dipindahkan ke geometri baru. Data akses tetap tersedia pada denah utama."
+  ],
+  "roofs": [
+    {
+      "id": "R01",
+      "buildingCodes": [
+        "A"
+      ],
+      "label": "A",
+      "polygon": [
+        [
+          85,
+          555
+        ],
+        [
+          162,
+          551
+        ],
+        [
+          181,
+          812
+        ],
+        [
+          104,
+          819
+        ]
+      ],
+      "labelPosition": [
+        132,
+        687
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R02",
+      "buildingCodes": [
+        "B"
+      ],
+      "label": "B",
+      "polygon": [
+        [
+          165,
+          869
+        ],
+        [
+          338,
+          859
+        ],
+        [
+          341,
+          935
+        ],
+        [
+          163,
+          947
+        ]
+      ],
+      "labelPosition": [
+        251,
+        903
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R03",
+      "buildingCodes": [
+        "C"
+      ],
+      "label": "C",
+      "polygon": [
+        [
+          357,
+          862
+        ],
+        [
+          487,
+          855
+        ],
+        [
+          494,
+          922
+        ],
+        [
+          359,
+          933
+        ]
+      ],
+      "labelPosition": [
+        425,
+        894
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R04",
+      "buildingCodes": [
+        "D",
+        "E"
+      ],
+      "label": "D / E",
+      "polygon": [
+        [
+          161,
+          519
+        ],
+        [
+          523,
+          506
+        ],
+        [
+          530,
+          580
+        ],
+        [
+          167,
+          597
+        ]
+      ],
+      "labelPosition": [
+        345,
+        550
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R05",
+      "buildingCodes": [
+        "F"
+      ],
+      "label": "F / UKS",
+      "polygon": [
+        [
+          538,
+          509
+        ],
+        [
+          614,
+          505
+        ],
+        [
+          624,
+          674
+        ],
+        [
+          547,
+          682
+        ]
+      ],
+      "labelPosition": [
+        581,
+        590
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R06",
+      "buildingCodes": [
+        "G"
+      ],
+      "label": "G",
+      "polygon": [
+        [
+          250,
+          443
+        ],
+        [
+          321,
+          438
+        ],
+        [
+          321,
+          419
+        ],
+        [
+          352,
+          417
+        ],
+        [
+          355,
+          435
+        ],
+        [
+          436,
+          432
+        ],
+        [
+          438,
+          493
+        ],
+        [
+          250,
+          504
+        ]
+      ],
+      "labelPosition": [
+        345,
+        467
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R07",
+      "buildingCodes": [
+        "H"
+      ],
+      "label": "H",
+      "polygon": [
+        [
+          435,
+          416
+        ],
+        [
+          609,
+          405
+        ],
+        [
+          622,
+          488
+        ],
+        [
+          438,
+          500
+        ]
+      ],
+      "labelPosition": [
+        524,
+        453
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R08",
+      "buildingCodes": [
+        "I"
+      ],
+      "label": "I",
+      "polygon": [
+        [
+          547,
+          682
+        ],
+        [
+          624,
+          674
+        ],
+        [
+          549,
+          869
+        ],
+        [
+          489,
+          848
+        ]
+      ],
+      "labelPosition": [
+        556,
+        769
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R09",
+      "buildingCodes": [
+        "J"
+      ],
+      "label": "J",
+      "polygon": [
+        [
+          49,
+          835
+        ],
+        [
+          142,
+          827
+        ],
+        [
+          151,
+          945
+        ],
+        [
+          51,
+          945
+        ]
+      ],
+      "labelPosition": [
+        100,
+        885
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R10",
+      "buildingCodes": [
+        "K"
+      ],
+      "label": "K",
+      "polygon": [
+        [
+          493,
+          960
+        ],
+        [
+          553,
+          982
+        ],
+        [
+          485,
+          1140
+        ],
+        [
+          427,
+          1117
+        ]
+      ],
+      "labelPosition": [
+        490,
+        1055
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R11",
+      "buildingCodes": [
+        "L"
+      ],
+      "label": "L",
+      "polygon": [
+        [
+          630,
+          418
+        ],
+        [
+          691,
+          411
+        ],
+        [
+          704,
+          582
+        ],
+        [
+          640,
+          594
+        ]
+      ],
+      "labelPosition": [
+        665,
+        499
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R12",
+      "buildingCodes": [
+        "M"
+      ],
+      "label": "M",
+      "polygon": [
+        [
+          277,
+          1118
+        ],
+        [
+          479,
+          1147
+        ],
+        [
+          469,
+          1208
+        ],
+        [
+          273,
+          1185
+        ]
+      ],
+      "labelPosition": [
+        376,
+        1163
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R13",
+      "buildingCodes": [
+        "N"
+      ],
+      "label": "N",
+      "polygon": [
+        [
+          52,
+          969
+        ],
+        [
+          117,
+          963
+        ],
+        [
+          125,
+          1195
+        ],
+        [
+          54,
+          1203
+        ]
+      ],
+      "labelPosition": [
+        87,
+        1083
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R14",
+      "buildingCodes": [
+        "O"
+      ],
+      "label": "O",
+      "polygon": [
+        [
+          271,
+          977
+        ],
+        [
+          331,
+          977
+        ],
+        [
+          337,
+          1111
+        ],
+        [
+          271,
+          1118
+        ]
+      ],
+      "labelPosition": [
+        304,
+        1046
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R15",
+      "buildingCodes": [
+        "O"
+      ],
+      "label": "O · terpisah",
+      "polygon": [
+        [
+          352,
+          956
+        ],
+        [
+          409,
+          953
+        ],
+        [
+          416,
+          1012
+        ],
+        [
+          353,
+          1018
+        ]
+      ],
+      "labelPosition": [
+        384,
+        984
+      ],
+      "mappingStatus": "provisional",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R16",
+      "buildingCodes": [],
+      "label": "R16",
+      "polygon": [
+        [
+          42,
+          514
+        ],
+        [
+          79,
+          512
+        ],
+        [
+          85,
+          630
+        ],
+        [
+          43,
+          626
+        ]
+      ],
+      "labelPosition": [
+        63,
+        571
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R17",
+      "buildingCodes": [],
+      "label": "R17",
+      "polygon": [
+        [
+          41,
+          428
+        ],
+        [
+          109,
+          415
+        ],
+        [
+          215,
+          414
+        ],
+        [
+          225,
+          506
+        ],
+        [
+          43,
+          507
+        ]
+      ],
+      "labelPosition": [
+        133,
+        462
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R18",
+      "buildingCodes": [],
+      "label": "R18",
+      "polygon": [
+        [
+          632,
+          163
+        ],
+        [
+          704,
+          145
+        ],
+        [
+          767,
+          161
+        ],
+        [
+          767,
+          390
+        ],
+        [
+          635,
+          398
+        ]
+      ],
+      "labelPosition": [
+        700,
+        274
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R19",
+      "buildingCodes": [],
+      "label": "R19",
+      "polygon": [
+        [
+          541,
+          903
+        ],
+        [
+          572,
+          917
+        ],
+        [
+          561,
+          948
+        ],
+        [
+          527,
+          934
+        ]
+      ],
+      "labelPosition": [
+        549,
+        925
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R20",
+      "buildingCodes": [],
+      "label": "R20",
+      "polygon": [
+        [
+          94,
+          513
+        ],
+        [
+          132,
+          517
+        ],
+        [
+          139,
+          551
+        ],
+        [
+          91,
+          548
+        ]
+      ],
+      "labelPosition": [
+        115,
+        534
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    },
+    {
+      "id": "R21",
+      "buildingCodes": [],
+      "label": "R21",
+      "polygon": [
+        [
+          274,
+          959
+        ],
+        [
+          300,
+          958
+        ],
+        [
+          303,
+          978
+        ],
+        [
+          273,
+          981
+        ]
+      ],
+      "labelPosition": [
+        288,
+        968
+      ],
+      "mappingStatus": "unassigned",
+      "note": "Batas terlihat pada atap; posisi dan kode belum diverifikasi di lapangan."
+    }
+  ],
+  "grounds": [
+    {
+      "id": "road-north",
+      "label": "Jalan",
+      "kind": "road",
+      "polygon": [
+        [
+          0,
+          416
+        ],
+        [
+          691,
+          54
+        ],
+        [
+          707,
+          83
+        ],
+        [
+          0,
+          452
+        ]
+      ],
+      "labelPosition": [
+        390,
+        237
+      ]
+    },
+    {
+      "id": "KU",
+      "label": "KU · lapangan luar",
+      "kind": "field",
+      "polygon": [
+        [
+          98,
+          0
+        ],
+        [
+          598,
+          0
+        ],
+        [
+          594,
+          103
+        ],
+        [
+          106,
+          332
+        ]
+      ],
+      "labelPosition": [
+        305,
+        142
+      ]
+    },
+    {
+      "id": "K1",
+      "label": "K1 · sementara",
+      "kind": "field",
+      "polygon": [
+        [
+          216,
+          599
+        ],
+        [
+          491,
+          594
+        ],
+        [
+          490,
+          839
+        ],
+        [
+          220,
+          840
+        ]
+      ],
+      "labelPosition": [
+        357,
+        769
+      ]
+    },
+    {
+      "id": "K2",
+      "label": "K2 · sementara",
+      "kind": "field",
+      "polygon": [
+        [
+          158,
+          979
+        ],
+        [
+          252,
+          978
+        ],
+        [
+          250,
+          1157
+        ],
+        [
+          138,
+          1155
+        ]
+      ],
+      "labelPosition": [
+        202,
+        1061
+      ]
+    },
+    {
+      "id": "garden-west",
+      "label": "Taman",
+      "kind": "garden",
+      "polygon": [
+        [
+          252,
+          639
+        ],
+        [
+          325,
+          638
+        ],
+        [
+          326,
+          709
+        ],
+        [
+          251,
+          712
+        ]
+      ],
+      "labelPosition": [
+        289,
+        675
+      ]
+    },
+    {
+      "id": "garden-east",
+      "label": "Taman",
+      "kind": "garden",
+      "polygon": [
+        [
+          371,
+          637
+        ],
+        [
+          441,
+          639
+        ],
+        [
+          439,
+          706
+        ],
+        [
+          371,
+          704
+        ]
+      ],
+      "labelPosition": [
+        405,
+        671
+      ]
+    }
+  ]
+}

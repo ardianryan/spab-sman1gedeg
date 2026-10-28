@@ -103,3 +103,9 @@ Tidak ada analitik, pelacakan pengguna oleh server, data kesehatan individu, ata
 Halaman menyediakan metadata kanonis, Open Graph, data terstruktur Schema.org, `robots.txt`, `sitemap.xml`, `llms.txt`, dan `llms-full.txt`. Peta adalah aplikasi satu halaman sehingga sitemap hanya mencantumkan halaman utama; mode video berbasis parameter URL tidak dicantumkan sebagai halaman tersendiri. Materi AI menjelaskan keterbatasan data agar jejak draf tidak disalahartikan sebagai rute resmi. Setelah DNS dan HTTPS aktif, periksa URL kanonis dan kirim sitemap melalui layanan pengelola mesin pencari yang digunakan sekolah.
 
 Kode sumber dilisensikan menurut [GNU Affero General Public License versi 3](LICENSE) (`AGPL-3.0-only`). Logo sekolah, foto, citra referensi, dan dokumen sumber memiliki hak masing-masing pemilik; berkas tersebut tidak dinyatakan sebagai karya berlisensi AGPL. Tautan kode sumber tersedia di antarmuka bagi pengguna layanan melalui jaringan.
+
+## Draf denah dari atap
+
+Buka **Prapemetaan citra → Draf denah atap** untuk membandingkan penelusuran baru dengan gambar udara, citra satelit, dan garis denah lama. Data tersimpan di `data/roof-plan.json`; geometri memakai koordinat piksel gambar udara. Atap ditelusuri manual, bukan dipindai otomatis. Kode gedung dan bentuknya masih perlu ditinjau, terutama atap gabungan dan bidang yang belum memiliki kode.
+
+Jalankan `npm run export:roof` untuk membangun ulang SVG, PNG, PDF, dan JSON pada `public/exports/denah-atap*`. Versi baru ini belum memuat pemindahan pintu atau rute. Asal gambar udara belum terverifikasi sebagai foto drone asli, dan pencocokan citra tidak sama dengan kalibrasi GPS final.

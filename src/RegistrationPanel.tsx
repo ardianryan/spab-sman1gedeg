@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { campus, pointsString } from "./model";
 import { geographicPreview } from "./geo";
+import { RoofPlanPanel } from "./RoofPlan";
 import {
   registration,
   registrationFit,
@@ -130,7 +131,7 @@ export function RegistrationArtwork({
     </>
   );
 }
-export function RegistrationPanel() {
+function ImageRegistrationPanel() {
   const [overlay, setOverlay] = useState<"campus" | "aerial">("campus"),
     [opacity, setOpacity] = useState(0.65),
     [points, setPoints] = useState(true);
@@ -253,4 +254,15 @@ export function RegistrationPanel() {
       </div>
     </section>
   );
+}
+
+export function RegistrationPanel() {
+  const [tab, setTab] = useState<"images" | "roofs">("images");
+  return <>
+    <div className="registration-tabs" role="group" aria-label="Jenis prapemetaan">
+      <button aria-pressed={tab === "images"} onClick={() => setTab("images")}>Pencocokan citra</button>
+      <button aria-pressed={tab === "roofs"} onClick={() => setTab("roofs")}>Draf denah atap</button>
+    </div>
+    {tab === "images" ? <ImageRegistrationPanel /> : <RoofPlanPanel />}
+  </>;
 }
